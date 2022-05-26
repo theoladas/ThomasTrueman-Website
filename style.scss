@@ -9,23 +9,27 @@ body {
   background: #17181a;
   font-family: "Roboto", sans-serif;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
 .flex-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-basis: 25rem;
+}
 // fonts
 // font-family: 'Bebas Neue', cursive;
 
 // Header
-#logo {
-  color: white;
-  font-family: "Abril Fatface", cursive;
-}
 .nav-header {
   min-height: 10vh;
   color: white;
@@ -33,22 +37,48 @@ img {
   margin: auto;
   width: 90%;
   padding: 2rem 0rem;
-}
-// Burger
-.line1,
-.line2 {
-  width: 2rem;
-  height: 0.2rem;
-  margin: 0.4rem;
-  background: white;
-  pointer-events: none;
+  // Logo
+  #logo {
+    color: white;
+    font-family: "Abril Fatface", cursive;
+  }
+  // Burger
+  .burger {
+    .line1,
+    .line2 {
+      width: 2rem;
+      height: 0.2rem;
+      margin: 0.4rem;
+      background: white;
+      pointer-events: none;
+    }
+  }
 }
 
-//Slides
-.slide {
-  min-height: 100vh;
-  margin: 0 auto 0 auto;
-  width: 90%;
-  color: white;
-  background: #17181a;
+// Main
+main {
+  //Slides
+  .slide {
+    min-height: 100vh;
+    margin: 0 auto 0 auto;
+    width: 90%;
+    color: white;
+    background: #17181a;
+  }
+  // Image
+  .hero-img {
+    position: relative;
+    flex: 1;
+    flex-basis: 25rem;
+    img {
+      width: 95%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  // Hero description
+  .hero-description {
+    padding-left: 5rem;
+    position: relative;
+  }
 }

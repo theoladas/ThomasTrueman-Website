@@ -10,20 +10,19 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .flex-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-#logo {
-  color: white;
-  font-family: "Abril Fatface", cursive;
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-basis: 25rem;
 }
 
 .nav-header {
@@ -33,9 +32,12 @@ img {
   width: 90%;
   padding: 2rem 0rem;
 }
-
-.line1,
-.line2 {
+.nav-header #logo {
+  color: white;
+  font-family: "Abril Fatface", cursive;
+}
+.nav-header .burger .line1,
+.nav-header .burger .line2 {
   width: 2rem;
   height: 0.2rem;
   margin: 0.4rem;
@@ -43,10 +45,24 @@ img {
   pointer-events: none;
 }
 
-.slide {
+main .slide {
   min-height: 100vh;
   margin: 0 auto 0 auto;
   width: 90%;
   color: white;
   background: #17181a;
+}
+main .hero-img {
+  position: relative;
+  flex: 1;
+  flex-basis: 25rem;
+}
+main .hero-img img {
+  width: 95%;
+  height: 100%;
+  object-fit: cover;
+}
+main .hero-description {
+  padding-left: 5rem;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
