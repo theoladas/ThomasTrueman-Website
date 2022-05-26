@@ -65,4 +65,42 @@ main .hero-img img {
 main .hero-description {
   padding-left: 5rem;
   position: relative;
+}
+main .hero-description .title h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+}
+main .hero-description .title h2 .about-me-span {
+  color: rgb(255, 139, 93);
+}
+main .hero-description .title h2 .dokkodo-span {
+  color: rgb(86, 124, 228);
+}
+main .hero-description .title h2 .production-span {
+  color: rgb(167, 110, 231);
+}
+main .hero-description .title .about-title {
+  margin-left: -24.5rem;
+}
+main .hero-description .title .dokkodo-title {
+  margin-left: -22rem;
+}
+main .hero-description .title .production-title {
+  margin-left: -19.5rem;
+}
+main .hero-description p {
+  padding: 3rem 0rem;
+  font-size: 1.5rem;
+  color: rgb(223, 223, 223);
+}
+main .hero-description .explore {
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border: 1px solid white;
+  text-decoration: none;
+  align-self: flex-start;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

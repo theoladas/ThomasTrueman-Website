@@ -27,7 +27,6 @@ body {
   flex-basis: 25rem;
 }
 // fonts
-// font-family: 'Bebas Neue', cursive;
 
 // Header
 .nav-header {
@@ -80,5 +79,45 @@ main {
   .hero-description {
     padding-left: 5rem;
     position: relative;
+    .title {
+      h2 {
+        font-family: "Bebas Neue", cursive;
+        font-size: 5rem;
+        .about-me-span {
+          color: rgb(255, 139, 93);
+        }
+        .dokkodo-span {
+          color: rgb(86, 124, 228);
+        }
+        .production-span {
+          color: rgb(167, 110, 231);
+        }
+      }
+      .about-title {
+        margin-left: -24.5rem;
+      }
+      .dokkodo-title {
+        margin-left: -22rem;
+      }
+      .production-title {
+        margin-left: -19.5rem;
+      }
+    }
+    p {
+      padding: 3rem 0rem;
+      font-size: 1.5rem;
+      color: rgb(223, 223, 223);
+    }
+    .explore {
+      padding: 1rem 2rem;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      border: 1px solid white;
+      text-decoration: none;
+      align-self: flex-start;
+      cursor: pointer;
+    }
   }
 }
