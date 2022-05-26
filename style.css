@@ -41,4 +41,12 @@ img {
   margin: 0.4rem;
   background: white;
   pointer-events: none;
+}
+
+.slide {
+  min-height: 100vh;
+  margin: 0 auto 0 auto;
+  width: 90%;
+  color: white;
+  background: #17181a;
 }/*# sourceMappingURL=style.css.map */
