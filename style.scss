@@ -1,3 +1,4 @@
+// Base styles
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +6,40 @@
 }
 body {
   height: 100vh;
+  background: #17181a;
   font-family: "Roboto", sans-serif;
 }
 img {
   max-width: 100%;
   height: auto;
 }
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 // fonts
-// font-family: 'Abril Fatface', cursive;
 // font-family: 'Bebas Neue', cursive;
-// font-family: 'Roboto', sans-serif;
+
+// Header
+#logo {
+  color: white;
+  font-family: "Abril Fatface", cursive;
+}
+.nav-header {
+  min-height: 10vh;
+  color: white;
+  // add space between the elements
+  margin: auto;
+  width: 90%;
+  padding: 2rem 0rem;
+}
+// Burger
+.line1,
+.line2 {
+  width: 2rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: white;
+  pointer-events: none;
+}

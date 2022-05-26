@@ -6,10 +6,39 @@
 
 body {
   height: 100vh;
+  background: #17181a;
   font-family: "Roboto", sans-serif;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  color: white;
+  font-family: "Abril Fatface", cursive;
+}
+
+.nav-header {
+  min-height: 10vh;
+  color: white;
+  margin: auto;
+  width: 90%;
+  padding: 2rem 0rem;
+}
+
+.line1,
+.line2 {
+  width: 2rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: white;
+  pointer-events: none;
 }/*# sourceMappingURL=style.css.map */
