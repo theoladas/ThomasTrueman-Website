@@ -36,6 +36,9 @@ body {
   color: white;
   font-family: "Abril Fatface", cursive;
 }
+.nav-header .burger {
+  cursor: pointer;
+}
 .nav-header .burger .line1,
 .nav-header .burger .line2 {
   width: 2rem;
@@ -103,4 +106,48 @@ main .hero-description .explore {
   text-decoration: none;
   align-self: flex-start;
   cursor: pointer;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+  opacity: 1;
+  clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
+}
+.nav-bar .nav-links {
+  font-size: 3rem;
+  flex-basis: 30rem;
+}
+.nav-bar .nav-links h3 {
+  padding: 3rem 0rem;
+}
+.nav-bar .contact {
+  flex-basis: 30rem;
+}
+.nav-bar .contact h2 {
+  font-size: 4rem;
+  padding: 2rem 0rem;
+}
+.nav-bar .contact p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.reveal-image,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #17181a;
+  top: 0;
+  left: 0;
 }/*# sourceMappingURL=style.css.map */

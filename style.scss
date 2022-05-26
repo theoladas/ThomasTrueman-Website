@@ -26,7 +26,6 @@ body {
   flex: 1;
   flex-basis: 25rem;
 }
-// fonts
 
 // Header
 .nav-header {
@@ -43,6 +42,7 @@ body {
   }
   // Burger
   .burger {
+    cursor: pointer;
     .line1,
     .line2 {
       width: 2rem;
@@ -120,4 +120,51 @@ main {
       cursor: pointer;
     }
   }
+}
+
+// Navigation
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+  opacity: 1;
+  // add the effect
+  clip-path: circle(50px at 100% -10%);
+  -webkit-clip-path: circle(50px at 100% -10%);
+  .nav-links {
+    font-size: 3rem;
+    flex-basis: 30rem;
+    h3 {
+      padding: 3rem 0rem;
+    }
+  }
+  .contact {
+    flex-basis: 30rem;
+    h2 {
+      font-size: 4rem;
+      padding: 2rem 0rem;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+// To hide each slider
+.reveal-image,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #17181a;
+  top: 0;
+  left: 0;
 }
