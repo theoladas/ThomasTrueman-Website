@@ -10,12 +10,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-a {
-  text-decoration: none;
-  text-transform: none;
-  color: white;
-}
-
 .flex-row {
   display: flex;
   align-items: center;
@@ -98,7 +92,6 @@ main .hero-description .explore {
   padding: 1rem 2rem;
   background: none;
   border: none;
-  color: white;
   font-size: 1rem;
   border: 1px solid white;
   text-decoration: none;
@@ -153,25 +146,6 @@ footer {
   width: 90%;
   margin: 0 auto;
 }
-footer .social-links {
-  text-align: center;
-}
-footer .social-links li {
-  list-style-type: none;
-  color: white;
-}
-footer .social-links li a {
-  padding-left: 1rem;
-  opacity: 0.7;
-  transition: all 0.4s ease;
-}
-footer .social-links li a:hover {
-  opacity: 1;
-}
-footer .social-links li a .fab {
-  font-size: 1rem;
-  color: white;
-}
 footer p {
   color: white;
   font-size: 0.75rem;
@@ -179,6 +153,9 @@ footer p {
   padding-top: 1rem;
 }
 footer p a {
+  text-decoration: none;
+  text-transform: none;
+  color: white;
   opacity: 0.7;
   transition: all 0.4s ease;
 }
