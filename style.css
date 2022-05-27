@@ -7,7 +7,13 @@
 body {
   height: 100vh;
   background: #17181a;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  text-transform: none;
+  color: white;
 }
 
 .flex-row {
@@ -77,23 +83,15 @@ main .hero-description .title h2 .about-me-span {
   color: rgb(255, 139, 93);
 }
 main .hero-description .title h2 .dokkodo-span {
-  color: rgb(86, 124, 228);
+  color: rgb(165, 214, 167);
 }
 main .hero-description .title h2 .production-span {
   color: rgb(167, 110, 231);
 }
-main .hero-description .title .about-title {
-  margin-left: -24.5rem;
-}
-main .hero-description .title .dokkodo-title {
-  margin-left: -22rem;
-}
-main .hero-description .title .production-title {
-  margin-left: -19.5rem;
-}
 main .hero-description p {
   padding: 3rem 0rem;
   font-size: 1.5rem;
+  line-height: 35px;
   color: rgb(223, 223, 223);
 }
 main .hero-description .explore {
@@ -142,20 +140,48 @@ main .hero-description .explore {
   line-height: 2rem;
 }
 
-.reveal-image,
-.reveal-text {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #17181a;
-  top: 0;
-  left: 0;
-}
-
 .cursor {
   width: 3rem;
   height: 3rem;
   border: 2px solid white;
   border-radius: 50%;
   position: absolute;
+}
+
+footer {
+  min-height: 5vh;
+  width: 90%;
+  margin: 0 auto;
+}
+footer .social-links {
+  text-align: center;
+}
+footer .social-links li {
+  list-style-type: none;
+  color: white;
+}
+footer .social-links li a {
+  padding-left: 1rem;
+  opacity: 0.7;
+  transition: all 0.4s ease;
+}
+footer .social-links li a:hover {
+  opacity: 1;
+}
+footer .social-links li a .fab {
+  font-size: 1rem;
+  color: white;
+}
+footer p {
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+footer p a {
+  opacity: 0.7;
+  transition: all 0.4s ease;
+}
+footer p a:hover {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
