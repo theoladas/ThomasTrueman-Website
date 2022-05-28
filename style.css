@@ -8,6 +8,7 @@ body {
   height: 100vh;
   background: #17181a;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 .flex-row {
@@ -59,6 +60,7 @@ main .hero-img {
   position: relative;
   flex: 1;
   flex-basis: 25rem;
+  overflow: hidden;
 }
 main .hero-img img {
   width: 95%;
@@ -131,6 +133,16 @@ main .hero-description .explore {
 .nav-bar .contact p {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.reveal-image,
+.reveal-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #17181a;
+  top: 0;
+  left: 0;
 }
 
 .cursor {
