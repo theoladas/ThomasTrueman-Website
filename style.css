@@ -173,4 +173,8 @@ footer p a {
 }
 footer p a:hover {
   opacity: 1;
+}
+
+.scrollmagic-pin-spacer {
+  position: static !important;
 }/*# sourceMappingURL=style.css.map */

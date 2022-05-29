@@ -222,3 +222,8 @@ footer {
   //   }
   // }
 }
+
+// Fix issue when scroll to be clickable the Explore btn
+.scrollmagic-pin-spacer {
+  position: static !important;
+}
