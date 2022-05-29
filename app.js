@@ -30,7 +30,7 @@ function animateSlides() {
 
     // Create Scene so we can animate when we scroll
     slideScene = new ScrollMagic.Scene({
-      // we want to start on every slide
+      // We want to start the animation on every slide
       triggerElement: slide,
       triggerHook: 0.35,
       // to be the slide visible after we trigger the scroll
@@ -38,20 +38,28 @@ function animateSlides() {
     })
       // to copy the previous timeline animation we use .setTween()
       .setTween(slideTimeline1)
-      .addIndicators({
-        colorStart: "white",
-        colorTrigger: "white",
-        name: "slide",
-      })
+      // .addIndicators({
+      //   colorStart: "white",
+      //   colorTrigger: "white",
+      //   name: "slide",
+      // })
       .addTo(controller);
 
     // New Animation (2nd Slide). I want to do a different animation with the 2nd slide. We can grab the 2nd slide from the forEach loop (index).
     const pageTimeline1 = gsap.timeline();
+    // Get the next slide so I can push it down and make it appear a bit later that the fade out effect.
+    // I can check if it's the last slide so that means that I don't have anything else to select. We use an if statement with Ternary Operator. If it's the last slide print "end" else select the next slide.
+    let nextSlide = slides.length - 1 === index ? "end" : slides[index + 1];
+    // Move down the nextSlide (so the previous slide stays visible for a longer time)
+    pageTimeline1.fromTo(nextSlide, { y: "0%" }, { y: "50%" });
     pageTimeline1.fromTo(
       slide,
       { opacity: 1, scale: 1 },
       { opacity: 0, scale: 0.5 }
     );
+    // Move up the nextSlide
+    pageTimeline1.fromTo(nextSlide, { y: "50%" }, { y: "0%" }, "-=0.2");
+
     // Create new scene
     pageScene = new ScrollMagic.Scene({
       triggerElement: slide,
@@ -59,12 +67,12 @@ function animateSlides() {
       // the duration will last the whole height of the slide
       duration: "100%",
     })
-      .addIndicators({
-        colorStart: "white",
-        colorTrigger: "white",
-        name: "page",
-        indent: 200,
-      })
+      // .addIndicators({
+      //   colorStart: "white",
+      //   colorTrigger: "white",
+      //   name: "page",
+      //   indent: 200,
+      // })
       //always you need to remove any semicolomn from here!
       // by setting a Pin means that the slide will stuck on the screen and it will stay stuck until the animation scroll ends.
       // The Pin related to the duration we set above. 100% means that will take the full height of the element we selected.
