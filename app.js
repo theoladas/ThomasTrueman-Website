@@ -1,7 +1,8 @@
 // Create the controller
 let controller;
-// create the scene
+// create the scenes
 let slideScene;
+let pageScene;
 
 function animateSlides() {
   // Init Controller
@@ -11,7 +12,7 @@ function animateSlides() {
   const nav = document.querySelector(".nav-header");
 
   // Loop over each slide
-  sliders.forEach((slide) => {
+  sliders.forEach((slide, index, slides) => {
     // Select some other elements
     const revealImage = slide.querySelector(".reveal-image");
     const image = slide.querySelector("img");
@@ -32,7 +33,7 @@ function animateSlides() {
       // we want to start on every slide
       triggerElement: slide,
       triggerHook: 0.35,
-      // to be visible always the slide when we trigger the scroll
+      // to be the slide visible after we trigger the scroll
       reverse: false,
     })
       // to copy the previous timeline animation we use .setTween()
@@ -41,6 +42,29 @@ function animateSlides() {
         colorStart: "white",
         colorTrigger: "white",
         name: "slide",
+      })
+      .addTo(controller);
+
+    // New Animation (2nd Slide). I want to do a different animation with the 2nd slide. We can grab the 2nd slide from the forEach loop (index).
+    const pageTimeline1 = gsap.timeline();
+    pageTimeline1.fromTo(
+      slide,
+      { opacity: 1, scale: 1 },
+      { opacity: 0, scale: 0.5 }
+    );
+    // Create new scene
+    pageScene = new ScrollMagic.Scene({
+      triggerElement: slide,
+      triggerHook: 0,
+      // the duration will last the whole height of the slide
+      duration: "100%",
+    }) //always you need to remove any semicolomn from here!
+      .setTween(pageTimeline1)
+      .addIndicators({
+        colorStart: "white",
+        colorTrigger: "white",
+        name: "page",
+        indent: 200,
       })
       .addTo(controller);
   });
