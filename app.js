@@ -68,7 +68,9 @@ function animateSlides() {
       //always you need to remove any semicolomn from here!
       // by setting a Pin means that the slide will stuck on the screen and it will stay stuck until the animation scroll ends.
       // The Pin related to the duration we set above. 100% means that will take the full height of the element we selected.
-      .setPin(slide)
+      // To fix the gap of the fade out black space , we add the pushFollowes: false, which will push the next element to show when the fade out finish.
+      // The next content is coming on top of the previous one.
+      .setPin(slide, { pushFollowers: false })
       .setTween(pageTimeline1)
       .addTo(controller);
   });
