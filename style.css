@@ -50,8 +50,8 @@ body {
 }
 
 main .slide {
-  min-height: 100vh;
-  margin: 0 auto 0 auto;
+  min-height: 95vh;
+  margin: 0 auto;
   width: 90%;
   color: white;
   background: #17181a;
@@ -155,6 +155,8 @@ main .hero-description .explore {
 
 footer {
   min-height: 5vh;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   width: 90%;
   margin: 0 auto;
 }
