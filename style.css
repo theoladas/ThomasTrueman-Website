@@ -26,6 +26,10 @@ body {
   flex-basis: 25rem;
 }
 
+.container-full {
+  width: 100%;
+}
+
 .nav-header {
   min-height: 10vh;
   color: white;
@@ -126,6 +130,17 @@ main .hero-description a {
 }
 main .hero-description a:hover {
   opacity: 1;
+}
+main .sample-pack .container-full {
+  background-color: rgb(86, 124, 228);
+  min-height: 10vh;
+}
+main .sample-pack h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 4.5rem;
+  text-align: center;
+  color: white;
+  margin-top: -40px;
 }
 
 .title-color-1 {
