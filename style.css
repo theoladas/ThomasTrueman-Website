@@ -142,6 +142,7 @@ main .sample-pack-page .page-description {
 main .sample-pack-page .page-description h1 {
   font-family: "Bebas Neue", cursive;
   font-size: 5rem;
+  line-height: 75px;
   text-align: center;
   color: white;
   margin-top: -48px;
@@ -180,7 +181,7 @@ main .sample-pack-page .sample2 .sample-text h2,
 main .sample-pack-page .sample3 .sample-text h2,
 main .sample-pack-page .sample4 .sample-text h2 {
   font-size: 3.5rem;
-  padding: 3rem 0rem;
+  padding: 2rem 0rem;
 }
 main .sample-pack-page .sample1 .sample-text p,
 main .sample-pack-page .sample2 .sample-text p,
@@ -188,8 +189,8 @@ main .sample-pack-page .sample3 .sample-text p,
 main .sample-pack-page .sample4 .sample-text p {
   font-size: 1.5rem;
   line-height: 35px;
-  padding: 2rem 2rem 0rem 0rem;
-  margin-bottom: 5rem;
+  padding: 1rem 2rem 0rem 0rem;
+  margin-bottom: 3rem;
 }
 main .sample-pack-page .sample1 .sample-image img,
 main .sample-pack-page .sample2 .sample-image img,
@@ -208,11 +209,35 @@ main .sample-pack-page .sample4 .sample-number {
   right: -5%;
   opacity: 0.2;
 }
+main .sample-pack-page .sample1 .sample-link,
+main .sample-pack-page .sample2 .sample-link,
+main .sample-pack-page .sample3 .sample-link,
+main .sample-pack-page .sample4 .sample-link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+  background: none;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  display: block;
+  width: 200px;
+  cursor: pointer;
+}
 main .sample-pack-page .sample1 h2 {
   color: rgb(212, 108, 171);
 }
 main .sample-pack-page .sample1 .sample-number {
   color: rgb(212, 108, 171);
+}
+main .sample-pack-page .sample1 .sample-link {
+  border: 1px solid rgb(212, 108, 171);
+  color: white;
+  transition: all 0.4s ease;
+}
+main .sample-pack-page .sample1 .sample-link:hover {
+  background-color: rgb(212, 108, 171);
 }
 main .sample-pack-page .sample2 h2 {
   color: rgb(140, 206, 222);
@@ -220,11 +245,35 @@ main .sample-pack-page .sample2 h2 {
 main .sample-pack-page .sample2 .sample-number {
   color: rgb(140, 206, 222);
 }
+main .sample-pack-page .sample2 .sample-link {
+  border: 1px solid rgb(140, 206, 222);
+  color: white;
+  transition: all 0.4s ease;
+}
+main .sample-pack-page .sample2 .sample-link:hover {
+  background-color: rgb(140, 206, 222);
+}
+main .sample-pack-page .sample3 .sample-link {
+  border: 2px solid black;
+  color: white;
+  transition: all 0.4s ease;
+}
+main .sample-pack-page .sample3 .sample-link:hover {
+  background-color: black;
+}
 main .sample-pack-page .sample4 h2 {
   color: rgb(238, 145, 137);
 }
 main .sample-pack-page .sample4 .sample-number {
   color: rgb(238, 145, 137);
+}
+main .sample-pack-page .sample4 .sample-link {
+  border: 1px solid rgb(238, 145, 137);
+  color: white;
+  transition: all 0.4s ease;
+}
+main .sample-pack-page .sample4 .sample-link:hover {
+  background-color: rgb(238, 145, 137);
 }
 
 .title-color-1 {

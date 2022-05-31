@@ -170,6 +170,7 @@ main {
       h1 {
         font-family: "Bebas Neue", cursive;
         font-size: 5rem;
+        line-height: 75px;
         text-align: center;
         color: white;
         margin-top: -48px;
@@ -203,13 +204,13 @@ main {
         position: relative;
         h2 {
           font-size: 3.5rem;
-          padding: 3rem 0rem;
+          padding: 2rem 0rem;
         }
         p {
           font-size: 1.5rem;
           line-height: 35px;
-          padding: 2rem 2rem 0rem 0rem;
-          margin-bottom: 5rem;
+          padding: 1rem 2rem 0rem 0rem;
+          margin-bottom: 3rem;
         }
       }
       .sample-image {
@@ -239,14 +240,35 @@ main {
         //
         opacity: 0.2;
       }
+      .sample-link {
+        font-size: 1.2rem;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        border: 1px solid white;
+        background: none;
+        padding: 1rem 2rem;
+        margin-bottom: 2rem;
+        display: block;
+        width: 200px;
+        cursor: pointer;
+      }
     }
-    // Color Slide's Title and Text number
+    // Add Color to Slide's Title , Text number, Link
     .sample1 {
       h2 {
         color: rgba(212, 108, 171, 255);
       }
       .sample-number {
         color: rgba(212, 108, 171, 255);
+      }
+      .sample-link {
+        border: 1px solid rgba(212, 108, 171, 255);
+        color: white;
+        transition: all 0.4s ease;
+        &:hover {
+          background-color: rgba(212, 108, 171, 255);
+        }
       }
     }
     .sample2 {
@@ -255,6 +277,24 @@ main {
       }
       .sample-number {
         color: rgba(140, 206, 222, 255);
+      }
+      .sample-link {
+        border: 1px solid rgba(140, 206, 222, 255);
+        color: white;
+        transition: all 0.4s ease;
+        &:hover {
+          background-color: rgba(140, 206, 222, 255);
+        }
+      }
+    }
+    .sample3 {
+      .sample-link {
+        border: 2px solid black;
+        color: white;
+        transition: all 0.4s ease;
+        &:hover {
+          background-color: black;
+        }
       }
     }
     .sample4 {
@@ -265,6 +305,14 @@ main {
       }
       .sample-number {
         color: rgba(238, 145, 137, 255);
+      }
+      .sample-link {
+        border: 1px solid rgba(238, 145, 137, 255);
+        color: white;
+        transition: all 0.4s ease;
+        &:hover {
+          background-color: rgba(238, 145, 137, 255);
+        }
       }
     }
   }
