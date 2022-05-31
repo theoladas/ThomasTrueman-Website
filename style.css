@@ -131,23 +131,30 @@ main .hero-description a {
 main .hero-description a:hover {
   opacity: 1;
 }
-main .sample-pack-page .container-full {
+main .sample-pack-page .container-full,
+main .about-page .container-full {
   min-height: 10vh;
   background-color: rgb(86, 124, 228);
 }
-main .sample-pack-page .page-description {
+main .sample-pack-page .container-full.about-container,
+main .about-page .container-full.about-container {
+  background-color: rgb(255, 139, 93);
+}
+main .sample-pack-page .page-description,
+main .about-page .page-description {
   width: 50%;
   margin: 0 auto;
 }
-main .sample-pack-page .page-description h1 {
+main .sample-pack-page .page-description h1,
+main .about-page .page-description h1 {
   font-family: "Bebas Neue", cursive;
   font-size: 5rem;
-  line-height: 75px;
   text-align: center;
   color: white;
   margin-top: -48px;
 }
-main .sample-pack-page .page-description p {
+main .sample-pack-page .page-description p,
+main .about-page .page-description p {
   text-align: center;
   font-size: 1rem;
   line-height: 30px;
@@ -157,7 +164,11 @@ main .sample-pack-page .page-description p {
 main .sample-pack-page .sample1,
 main .sample-pack-page .sample2,
 main .sample-pack-page .sample3,
-main .sample-pack-page .sample4 {
+main .sample-pack-page .sample4,
+main .about-page .sample1,
+main .about-page .sample2,
+main .about-page .sample3,
+main .about-page .sample4 {
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -168,10 +179,25 @@ main .sample-pack-page .sample4 {
   margin: auto;
   color: white;
 }
+main .sample-pack-page .sample1.about1,
+main .sample-pack-page .sample2.about1,
+main .sample-pack-page .sample3.about1,
+main .sample-pack-page .sample4.about1,
+main .about-page .sample1.about1,
+main .about-page .sample2.about1,
+main .about-page .sample3.about1,
+main .about-page .sample4.about1 {
+  min-height: 50vh;
+  padding: 8rem 0rem;
+}
 main .sample-pack-page .sample1 .sample-text,
 main .sample-pack-page .sample2 .sample-text,
 main .sample-pack-page .sample3 .sample-text,
-main .sample-pack-page .sample4 .sample-text {
+main .sample-pack-page .sample4 .sample-text,
+main .about-page .sample1 .sample-text,
+main .about-page .sample2 .sample-text,
+main .about-page .sample3 .sample-text,
+main .about-page .sample4 .sample-text {
   flex-basis: 25rem;
   flex: 1;
   position: relative;
@@ -179,30 +205,91 @@ main .sample-pack-page .sample4 .sample-text {
 main .sample-pack-page .sample1 .sample-text h2,
 main .sample-pack-page .sample2 .sample-text h2,
 main .sample-pack-page .sample3 .sample-text h2,
-main .sample-pack-page .sample4 .sample-text h2 {
+main .sample-pack-page .sample4 .sample-text h2,
+main .about-page .sample1 .sample-text h2,
+main .about-page .sample2 .sample-text h2,
+main .about-page .sample3 .sample-text h2,
+main .about-page .sample4 .sample-text h2 {
   font-size: 3.5rem;
   padding: 2rem 0rem;
 }
 main .sample-pack-page .sample1 .sample-text p,
 main .sample-pack-page .sample2 .sample-text p,
 main .sample-pack-page .sample3 .sample-text p,
-main .sample-pack-page .sample4 .sample-text p {
+main .sample-pack-page .sample4 .sample-text p,
+main .about-page .sample1 .sample-text p,
+main .about-page .sample2 .sample-text p,
+main .about-page .sample3 .sample-text p,
+main .about-page .sample4 .sample-text p {
   font-size: 1.5rem;
   line-height: 35px;
   padding: 1rem 2rem 0rem 0rem;
   margin-bottom: 3rem;
 }
+main .sample-pack-page .sample1 .sample-text.about-text,
+main .sample-pack-page .sample2 .sample-text.about-text,
+main .sample-pack-page .sample3 .sample-text.about-text,
+main .sample-pack-page .sample4 .sample-text.about-text,
+main .about-page .sample1 .sample-text.about-text,
+main .about-page .sample2 .sample-text.about-text,
+main .about-page .sample3 .sample-text.about-text,
+main .about-page .sample4 .sample-text.about-text {
+  align-self: flex-start;
+}
+main .sample-pack-page .sample1 .sample-text.about-text p,
+main .sample-pack-page .sample2 .sample-text.about-text p,
+main .sample-pack-page .sample3 .sample-text.about-text p,
+main .sample-pack-page .sample4 .sample-text.about-text p,
+main .about-page .sample1 .sample-text.about-text p,
+main .about-page .sample2 .sample-text.about-text p,
+main .about-page .sample3 .sample-text.about-text p,
+main .about-page .sample4 .sample-text.about-text p {
+  font-size: 1rem;
+  padding-top: 0;
+  padding-bottom: 1rem;
+  line-height: 30px;
+  margin-bottom: 0.5rem;
+}
 main .sample-pack-page .sample1 .sample-image img,
 main .sample-pack-page .sample2 .sample-image img,
 main .sample-pack-page .sample3 .sample-image img,
-main .sample-pack-page .sample4 .sample-image img {
+main .sample-pack-page .sample4 .sample-image img,
+main .about-page .sample1 .sample-image img,
+main .about-page .sample2 .sample-image img,
+main .about-page .sample3 .sample-image img,
+main .about-page .sample4 .sample-image img {
   max-width: 100%;
   border-radius: 10px;
+}
+main .sample-pack-page .sample1 .sample-image.about-image,
+main .sample-pack-page .sample2 .sample-image.about-image,
+main .sample-pack-page .sample3 .sample-image.about-image,
+main .sample-pack-page .sample4 .sample-image.about-image,
+main .about-page .sample1 .sample-image.about-image,
+main .about-page .sample2 .sample-image.about-image,
+main .about-page .sample3 .sample-image.about-image,
+main .about-page .sample4 .sample-image.about-image {
+  padding-right: 2rem;
+}
+main .sample-pack-page .sample1 .sample-image.about-image img,
+main .sample-pack-page .sample2 .sample-image.about-image img,
+main .sample-pack-page .sample3 .sample-image.about-image img,
+main .sample-pack-page .sample4 .sample-image.about-image img,
+main .about-page .sample1 .sample-image.about-image img,
+main .about-page .sample2 .sample-image.about-image img,
+main .about-page .sample3 .sample-image.about-image img,
+main .about-page .sample4 .sample-image.about-image img {
+  max-width: 100%;
+  border-radius: 0px;
 }
 main .sample-pack-page .sample1 .sample-number,
 main .sample-pack-page .sample2 .sample-number,
 main .sample-pack-page .sample3 .sample-number,
-main .sample-pack-page .sample4 .sample-number {
+main .sample-pack-page .sample4 .sample-number,
+main .about-page .sample1 .sample-number,
+main .about-page .sample2 .sample-number,
+main .about-page .sample3 .sample-number,
+main .about-page .sample4 .sample-number {
   font-size: 10rem;
   position: absolute;
   bottom: 0%;
@@ -212,7 +299,11 @@ main .sample-pack-page .sample4 .sample-number {
 main .sample-pack-page .sample1 .sample-link,
 main .sample-pack-page .sample2 .sample-link,
 main .sample-pack-page .sample3 .sample-link,
-main .sample-pack-page .sample4 .sample-link {
+main .sample-pack-page .sample4 .sample-link,
+main .about-page .sample1 .sample-link,
+main .about-page .sample2 .sample-link,
+main .about-page .sample3 .sample-link,
+main .about-page .sample4 .sample-link {
   font-size: 1.2rem;
   text-decoration: none;
   text-align: center;
@@ -225,54 +316,68 @@ main .sample-pack-page .sample4 .sample-link {
   width: 200px;
   cursor: pointer;
 }
-main .sample-pack-page .sample1 h2 {
+main .sample-pack-page .sample1 h2,
+main .about-page .sample1 h2 {
   color: rgb(212, 108, 171);
 }
-main .sample-pack-page .sample1 .sample-number {
+main .sample-pack-page .sample1 .sample-number,
+main .about-page .sample1 .sample-number {
   color: rgb(212, 108, 171);
 }
-main .sample-pack-page .sample1 .sample-link {
+main .sample-pack-page .sample1 .sample-link,
+main .about-page .sample1 .sample-link {
   border: 1px solid rgb(212, 108, 171);
   color: white;
   transition: all 0.4s ease;
 }
-main .sample-pack-page .sample1 .sample-link:hover {
+main .sample-pack-page .sample1 .sample-link:hover,
+main .about-page .sample1 .sample-link:hover {
   background-color: rgb(212, 108, 171);
 }
-main .sample-pack-page .sample2 h2 {
+main .sample-pack-page .sample2 h2,
+main .about-page .sample2 h2 {
   color: rgb(140, 206, 222);
 }
-main .sample-pack-page .sample2 .sample-number {
+main .sample-pack-page .sample2 .sample-number,
+main .about-page .sample2 .sample-number {
   color: rgb(140, 206, 222);
 }
-main .sample-pack-page .sample2 .sample-link {
+main .sample-pack-page .sample2 .sample-link,
+main .about-page .sample2 .sample-link {
   border: 1px solid rgb(140, 206, 222);
   color: white;
   transition: all 0.4s ease;
 }
-main .sample-pack-page .sample2 .sample-link:hover {
+main .sample-pack-page .sample2 .sample-link:hover,
+main .about-page .sample2 .sample-link:hover {
   background-color: rgb(140, 206, 222);
 }
-main .sample-pack-page .sample3 .sample-link {
+main .sample-pack-page .sample3 .sample-link,
+main .about-page .sample3 .sample-link {
   border: 2px solid black;
   color: white;
   transition: all 0.4s ease;
 }
-main .sample-pack-page .sample3 .sample-link:hover {
+main .sample-pack-page .sample3 .sample-link:hover,
+main .about-page .sample3 .sample-link:hover {
   background-color: black;
 }
-main .sample-pack-page .sample4 h2 {
+main .sample-pack-page .sample4 h2,
+main .about-page .sample4 h2 {
   color: rgb(238, 145, 137);
 }
-main .sample-pack-page .sample4 .sample-number {
+main .sample-pack-page .sample4 .sample-number,
+main .about-page .sample4 .sample-number {
   color: rgb(238, 145, 137);
 }
-main .sample-pack-page .sample4 .sample-link {
+main .sample-pack-page .sample4 .sample-link,
+main .about-page .sample4 .sample-link {
   border: 1px solid rgb(238, 145, 137);
   color: white;
   transition: all 0.4s ease;
 }
-main .sample-pack-page .sample4 .sample-link:hover {
+main .sample-pack-page .sample4 .sample-link:hover,
+main .about-page .sample4 .sample-link:hover {
   background-color: rgb(238, 145, 137);
 }
 

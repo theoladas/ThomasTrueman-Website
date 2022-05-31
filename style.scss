@@ -157,11 +157,15 @@ main {
   }
 
   // SAMPLE PACK PAGE
-  .sample-pack-page {
+  .sample-pack-page,
+  .about-page {
     // Colored banner
     .container-full {
       min-height: 10vh;
       background-color: rgb(86, 124, 228);
+      &.about-container {
+        background-color: rgb(255, 139, 93);
+      }
     }
     // Page's Head title
     .page-description {
@@ -170,7 +174,6 @@ main {
       h1 {
         font-family: "Bebas Neue", cursive;
         font-size: 5rem;
-        line-height: 75px;
         text-align: center;
         color: white;
         margin-top: -48px;
@@ -198,6 +201,10 @@ main {
       width: 70%;
       margin: auto;
       color: white;
+      &.about1 {
+        min-height: 50vh;
+        padding: 8rem 0rem;
+      }
       .sample-text {
         flex-basis: 25rem;
         flex: 1;
@@ -212,6 +219,16 @@ main {
           padding: 1rem 2rem 0rem 0rem;
           margin-bottom: 3rem;
         }
+        &.about-text {
+          align-self: flex-start;
+          p {
+            font-size: 1rem;
+            padding-top: 0;
+            padding-bottom: 1rem;
+            line-height: 30px;
+            margin-bottom: 0.5rem;
+          }
+        }
       }
       .sample-image {
         // height: 70vh;
@@ -223,6 +240,13 @@ main {
           // object-fit: cover;
           max-width: 100%;
           border-radius: 10px;
+        }
+        &.about-image {
+          padding-right: 2rem;
+          img {
+            max-width: 100%;
+            border-radius: 0px;
+          }
         }
       }
       .sample-number {
