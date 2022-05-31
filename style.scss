@@ -265,9 +265,11 @@ main {
       .sample-link {
         border: 1px solid rgba(212, 108, 171, 255);
         color: white;
+        // background-color: rgba(212, 108, 171, 255);
         transition: all 0.4s ease;
         &:hover {
           background-color: rgba(212, 108, 171, 255);
+          // background-color: transparent;
         }
       }
     }
