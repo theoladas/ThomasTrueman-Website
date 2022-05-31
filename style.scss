@@ -99,6 +99,9 @@ main {
         .production-span {
           color: rgb(167, 110, 231);
         }
+        .sample-span {
+          color: rgb(86, 124, 228);
+        }
         // .about-title {
         //   margin-left: -24rem;
         // }
@@ -140,6 +143,15 @@ main {
       align-self: flex-start;
       cursor: pointer;
     }
+    a {
+      opacity: 0.5;
+      text-decoration: none;
+      color: white;
+      transition: opacity 0.4s ease;
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -152,6 +164,9 @@ main {
 }
 .title-color-3 {
   background: rgb(167, 110, 231);
+}
+.title-color-4 {
+  background: rgb(86, 124, 228);
 }
 // Navigation
 .nav-bar {

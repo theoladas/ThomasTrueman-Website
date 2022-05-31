@@ -90,6 +90,9 @@ main .hero-description .title h2 .dokkodo-span {
 main .hero-description .title h2 .production-span {
   color: rgb(167, 110, 231);
 }
+main .hero-description .title h2 .sample-span {
+  color: rgb(86, 124, 228);
+}
 main .hero-description .title .title-color {
   position: absolute;
   top: 0;
@@ -115,6 +118,15 @@ main .hero-description .explore {
   align-self: flex-start;
   cursor: pointer;
 }
+main .hero-description a {
+  opacity: 0.5;
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.4s ease;
+}
+main .hero-description a:hover {
+  opacity: 1;
+}
 
 .title-color-1 {
   background: rgb(255, 139, 93);
@@ -126,6 +138,10 @@ main .hero-description .explore {
 
 .title-color-3 {
   background: rgb(167, 110, 231);
+}
+
+.title-color-4 {
+  background: rgb(86, 124, 228);
 }
 
 .nav-bar {
