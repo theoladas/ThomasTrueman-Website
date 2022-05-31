@@ -164,12 +164,22 @@ main {
       min-height: 10vh;
     }
     // Page's Head title
-    h1 {
-      font-family: "Bebas Neue", cursive;
-      font-size: 4.5rem;
-      text-align: center;
-      color: white;
-      margin-top: -40px;
+    .page-description {
+      width: 50%;
+      margin: 0 auto;
+      h1 {
+        font-family: "Bebas Neue", cursive;
+        font-size: 5rem;
+        text-align: center;
+        color: white;
+        margin-top: -48px;
+      }
+      p {
+        // text-align: center;
+        font-size: 1rem;
+        line-height: 30px;
+        color: rgb(223, 223, 223);
+      }
     }
   }
 }
