@@ -32,6 +32,8 @@ body {
   margin: auto;
   width: 90%;
   padding: 2rem 0rem;
+  position: relative;
+  z-index: 2;
 }
 .nav-header #logo {
   color: white;
@@ -142,7 +144,7 @@ main .hero-description .explore {
   -webkit-clip-path: circle(50px at 100% -10%);
 }
 .nav-bar .nav-links {
-  font-size: 3rem;
+  font-size: 2rem;
   flex-basis: 30rem;
 }
 .nav-bar .nav-links h3 {
@@ -152,7 +154,7 @@ main .hero-description .explore {
   flex-basis: 30rem;
 }
 .nav-bar .contact h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 2rem 0rem;
 }
 .nav-bar .contact p {
@@ -183,6 +185,14 @@ main .hero-description .explore {
   transform-origin: 130% 160%;
 }
 
+.cursor-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.5rem;
+}
+
 .nav-active {
   background: rgb(86, 124, 228);
   transform: scale(1.5);
@@ -191,14 +201,6 @@ main .hero-description .explore {
 .explore-active {
   background: white;
   transform: scale(1.5);
-}
-
-.cursor-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 0.5rem;
 }
 
 footer {
@@ -227,4 +229,8 @@ footer p a:hover {
 
 .scrollmagic-pin-spacer {
   position: static !important;
+}
+
+body.hide {
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */

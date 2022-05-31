@@ -33,6 +33,9 @@ body {
   margin: auto;
   width: 90%;
   padding: 2rem 0rem;
+  // put the content of nav-header infront (when hover)
+  position: relative;
+  z-index: 2;
   // Logo
   #logo {
     color: white;
@@ -140,7 +143,7 @@ main {
   }
 }
 
-// Match the color text of each section
+// Match the color title text of each section
 .title-color-1 {
   background: rgb(255, 139, 93);
 }
@@ -167,7 +170,7 @@ main {
   clip-path: circle(50px at 100% -10%);
   -webkit-clip-path: circle(50px at 100% -10%);
   .nav-links {
-    font-size: 3rem;
+    font-size: 2rem;
     flex-basis: 30rem;
     h3 {
       padding: 3rem 0rem;
@@ -176,7 +179,7 @@ main {
   .contact {
     flex-basis: 30rem;
     h2 {
-      font-size: 4rem;
+      font-size: 3rem;
       padding: 2rem 0rem;
     }
     p {
@@ -215,6 +218,14 @@ main {
   // center the transformed scale circle (left/right, up/down)
   transform-origin: 130% 160%;
 }
+// Center cursor text (Tap)
+.cursor-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.5rem;
+}
 // Create the class when hover on Logo and Bruger
 .nav-active {
   background: rgb(86, 124, 228);
@@ -224,14 +235,6 @@ main {
 .explore-active {
   background: white;
   transform: scale(1.5);
-}
-// Center cursor text (Tap)
-.cursor-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 0.5rem;
 }
 
 // Footer
@@ -282,4 +285,9 @@ footer {
 // Fix issue when scroll to be clickable the Explore btn
 .scrollmagic-pin-spacer {
   position: static !important;
+}
+
+// Remove the scrollbar when we are in the contact page
+body.hide {
+  overflow: hidden;
 }

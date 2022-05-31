@@ -83,21 +83,22 @@ function animateSlides() {
   });
 }
 
-// CURSOR Functionality
-
+// SELECTORS
 // select the mouse
-let mouse = document.querySelector(".cursor");
+const mouse = document.querySelector(".cursor");
 // select the mouse text
-let mouseTxt = mouse.querySelector("span");
+const mouseTxt = mouse.querySelector("span");
+// select the burger
+const burger = document.querySelector(".burger");
 
-// Create function for the cursor
+// FUNCTIONS
+// Cursor function
 function cursor(e) {
   // Modify the styles of the top and left
   mouse.style.top = e.pageY + "px";
   mouse.style.left = e.pageX + "px";
 }
-
-// Create function when hover elements, to make an animation
+// When hover elements, to make an animation
 function activeCursor(e) {
   // Create a variable to give us what element we mouseover
   const itemClicked = e.target;
@@ -120,10 +121,41 @@ function activeCursor(e) {
     mouseTxt.innerText = "";
   }
 }
+// NavToggle function
+function navToggle(e) {
+  // create the statement to be able to toggle the burger:
+
+  // if the e.target does not contains the active class
+  if (!e.target.classList.contains("active")) {
+    // add the active class on it
+    e.target.classList.add("active");
+    // and then start animate everything:
+    // Create animation for burger lines (y push it up by 5). We make background:black to see the burger lines in the white (contact page) bg.
+    gsap.to(".line1", 0.5, { rotate: "45deg", y: 5, background: "black" });
+    gsap.to(".line2", 0.5, { rotate: "-45deg", y: -5, background: "black" });
+    // make visible the logo on cotnact page (by changing bg-color)
+    gsap.to("#logo", 1, { color: "black" });
+    // Expand that nav clipPath effect (show the contact page)
+    gsap.to(".nav-bar", 1, { clipPath: "circle(2500px at 100% -10%)" });
+    // remove the scroll bar when we are in Contact page by creating a hide class
+    document.body.classList.add("hide");
+  } else {
+    // if e.target HAS the active class , we will remove it and we will animate everything back
+    e.target.classList.remove("active");
+    gsap.to(".line1", 0.5, { rotate: "0deg", y: 5, background: "white" });
+    gsap.to(".line2", 0.5, { rotate: "0deg", y: 5, background: "white" });
+    gsap.to("#logo", 1, { color: "white" });
+    gsap.to(".nav-bar", 1, { clipPath: "circle(50px at 100% -10%)" });
+    document.body.classList.remove("hide");
+  }
+}
+
+// EVENT LISTENERS
 // We want to trigger the window object when we move the mouse(to get the position y and x)
 window.addEventListener("mousemove", cursor);
 // We want when hover elements to create an animation
 window.addEventListener("mouseover", activeCursor);
-
+// Burger Event listener
+burger.addEventListener("click", navToggle);
 // Call the functions
 animateSlides();
