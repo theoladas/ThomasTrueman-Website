@@ -131,33 +131,33 @@ main .hero-description a {
 main .hero-description a:hover {
   opacity: 1;
 }
-main .sample-pack .container-full {
-  background-color: rgb(86, 124, 228);
+main .sample-pack-page .container-full {
   min-height: 10vh;
+  background-color: rgb(86, 124, 228);
 }
-main .sample-pack .page-description {
+main .sample-pack-page .page-description {
   width: 50%;
   margin: 0 auto;
 }
-main .sample-pack .page-description h1 {
+main .sample-pack-page .page-description h1 {
   font-family: "Bebas Neue", cursive;
   font-size: 5rem;
   text-align: center;
   color: white;
   margin-top: -48px;
 }
-main .sample-pack .page-description p {
+main .sample-pack-page .page-description p {
   text-align: center;
   font-size: 1rem;
   line-height: 30px;
   color: rgb(223, 223, 223);
   padding-bottom: 5rem;
 }
-main .sample-pack .sample1,
-main .sample-pack .sample2,
-main .sample-pack .sample3,
-main .sample-pack .sample4 {
-  min-height: 60vh;
+main .sample-pack-page .sample1,
+main .sample-pack-page .sample2,
+main .sample-pack-page .sample3,
+main .sample-pack-page .sample4 {
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,17 +167,64 @@ main .sample-pack .sample4 {
   margin: auto;
   color: white;
 }
-main .sample-pack .sample-image {
-  height: 80vh;
-  flex-basis: 30rem;
-}
-main .sample-pack .sample-image img {
-  max-width: 100%;
-}
-main .sample-pack .sample-text {
+main .sample-pack-page .sample1 .sample-text,
+main .sample-pack-page .sample2 .sample-text,
+main .sample-pack-page .sample3 .sample-text,
+main .sample-pack-page .sample4 .sample-text {
   flex-basis: 25rem;
   flex: 1;
   position: relative;
+}
+main .sample-pack-page .sample1 .sample-text h2,
+main .sample-pack-page .sample2 .sample-text h2,
+main .sample-pack-page .sample3 .sample-text h2,
+main .sample-pack-page .sample4 .sample-text h2 {
+  font-size: 3.5rem;
+  padding: 3rem 0rem;
+}
+main .sample-pack-page .sample1 .sample-text p,
+main .sample-pack-page .sample2 .sample-text p,
+main .sample-pack-page .sample3 .sample-text p,
+main .sample-pack-page .sample4 .sample-text p {
+  font-size: 1.5rem;
+  line-height: 35px;
+  padding: 2rem 2rem 0rem 0rem;
+  margin-bottom: 5rem;
+}
+main .sample-pack-page .sample1 .sample-image img,
+main .sample-pack-page .sample2 .sample-image img,
+main .sample-pack-page .sample3 .sample-image img,
+main .sample-pack-page .sample4 .sample-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+main .sample-pack-page .sample1 .sample-number,
+main .sample-pack-page .sample2 .sample-number,
+main .sample-pack-page .sample3 .sample-number,
+main .sample-pack-page .sample4 .sample-number {
+  font-size: 10rem;
+  position: absolute;
+  bottom: 0%;
+  right: -5%;
+  opacity: 0.2;
+}
+main .sample-pack-page .sample1 h2 {
+  color: rgb(212, 108, 171);
+}
+main .sample-pack-page .sample1 .sample-number {
+  color: rgb(212, 108, 171);
+}
+main .sample-pack-page .sample2 h2 {
+  color: rgb(140, 206, 222);
+}
+main .sample-pack-page .sample2 .sample-number {
+  color: rgb(140, 206, 222);
+}
+main .sample-pack-page .sample4 h2 {
+  color: rgb(238, 145, 137);
+}
+main .sample-pack-page .sample4 .sample-number {
+  color: rgb(238, 145, 137);
 }
 
 .title-color-1 {
@@ -217,6 +264,15 @@ main .sample-pack .sample-text {
 }
 .nav-bar .nav-links h3 {
   padding: 3rem 0rem;
+}
+.nav-bar .nav-links .instagram-txt {
+  transition: all 0.4s ease;
+}
+.nav-bar .nav-links .instagram-txt:hover {
+  background: -webkit-linear-gradient(#405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .nav-bar .contact {
   flex-basis: 30rem;
