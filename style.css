@@ -152,6 +152,28 @@ main .hero-description .explore {
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.4s ease;
+  transition-property: background, transform;
+  transform-origin: 130% 160%;
+}
+
+.nav-active {
+  background: rgb(86, 124, 228);
+  transform: scale(1.5);
+}
+
+.explore-active {
+  background: white;
+  transform: scale(1.5);
+}
+
+.cursor-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.4rem;
 }
 
 footer {

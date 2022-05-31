@@ -83,17 +83,43 @@ function animateSlides() {
   });
 }
 
-// Create another function for the cursor
+// CURSOR Functionality
+
+// select the mouse
+let mouse = document.querySelector(".cursor");
+// select the mouse text
+let mouseTxt = mouse.querySelector("span");
+
+// Create function for the cursor
 function cursor(e) {
-  // select the mouse
-  let mouse = document.querySelector(".cursor");
   // Modify the styles of the top and left
   mouse.style.top = e.pageY + "px";
   mouse.style.left = e.pageX + "px";
 }
 
+// Create function when hover elements, to make an animation
+function activeCursor(e) {
+  // Create a variable to give us what element we mouseover
+  const itemClicked = e.target;
+  // Based on the class element (logo & burger) add nav-active
+  if (itemClicked.id === "logo" || itemClicked.classList.contains("burger")) {
+    mouse.classList.add("nav-active");
+  } else {
+    mouse.classList.remove("nav-active");
+  }
+  // Based on the class element (explore) add explore-active class
+  if (itemClicked.classList.contains("explore")) {
+    mouse.classList.add("explore-active");
+    mouseTxt.innerText = "Tap";
+  } else {
+    mouse.classList.remove("explore-active");
+    mouseTxt.innerText = "";
+  }
+}
 // We want to trigger the window object when we move the mouse(to get the position y and x)
 window.addEventListener("mousemove", cursor);
+// We want when hover elements to create an animation
+window.addEventListener("mouseover", activeCursor);
 
 // Call the functions
 animateSlides();

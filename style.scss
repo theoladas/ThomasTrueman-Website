@@ -180,6 +180,32 @@ main {
   position: absolute;
   // align the mouse and the cursor (circle) to be in center
   transform: translate(-50%, -50%);
+  // to be able to click on elements
+  pointer-events: none;
+  // creater transition for the nav-active
+  transition: all 0.4s ease;
+  // specify only to transition the background and the transform
+  transition-property: background, transform;
+  // center the transformed scale circle (left/right, up/down)
+  transform-origin: 130% 160%;
+}
+// Create the class when hover on Logo and Bruger
+.nav-active {
+  background: rgb(86, 124, 228);
+  transform: scale(1.5);
+}
+// Create the class when hover on Explore Button
+.explore-active {
+  background: white;
+  transform: scale(1.5);
+}
+// Center cursor text (Tap)
+.cursor-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.4rem;
 }
 
 // Footer
