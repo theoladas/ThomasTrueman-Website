@@ -72,9 +72,8 @@ function animateSlides() {
       //   colorTrigger: "white",
       //   name: "page",
       //   indent: 200,
-      // })
-      //always you need to remove any semicolomn from here!
-      // by setting a Pin means that the slide will stuck on the screen and it will stay stuck until the animation scroll ends.
+      // }) //always you need to remove any semicolomn from here!
+      // By setting a Pin means that the slide will stuck on the screen and it will stay stuck until the animation scroll ends.
       // The Pin related to the duration we set above. 100% means that will take the full height of the element we selected.
       // To fix the gap of the fade out black space , we add the pushFollowes: false, which will push the next element to show when the fade out finish.
       // The next content is coming on top of the previous one.
@@ -83,5 +82,18 @@ function animateSlides() {
       .addTo(controller);
   });
 }
-// Call the function
+
+// Create another function for the cursor
+function cursor(e) {
+  // select the mouse
+  let mouse = document.querySelector(".cursor");
+  // Modify the styles of the top and left
+  mouse.style.top = e.pageY + "px";
+  mouse.style.left = e.pageX + "px";
+}
+
+// We want to trigger the window object when we move the mouse(to get the position y and x)
+window.addEventListener("mousemove", cursor);
+
+// Call the functions
 animateSlides();

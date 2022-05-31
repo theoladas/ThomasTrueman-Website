@@ -178,6 +178,8 @@ main {
   border: 2px solid white;
   border-radius: 50%;
   position: absolute;
+  // align the mouse and the cursor (circle) to be in center
+  transform: translate(-50%, -50%);
 }
 
 // Footer
