@@ -151,6 +151,33 @@ main .sample-pack .page-description p {
   font-size: 1rem;
   line-height: 30px;
   color: rgb(223, 223, 223);
+  padding-bottom: 5rem;
+}
+main .sample-pack .sample1,
+main .sample-pack .sample2,
+main .sample-pack .sample3,
+main .sample-pack .sample4 {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 70%;
+  margin: auto;
+  color: white;
+}
+main .sample-pack .sample-image {
+  height: 80vh;
+  flex-basis: 30rem;
+}
+main .sample-pack .sample-image img {
+  max-width: 100%;
+}
+main .sample-pack .sample-text {
+  flex-basis: 25rem;
+  flex: 1;
+  position: relative;
 }
 
 .title-color-1 {

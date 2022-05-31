@@ -179,7 +179,36 @@ main {
         font-size: 1rem;
         line-height: 30px;
         color: rgb(223, 223, 223);
+        padding-bottom: 5rem;
       }
+    }
+    // Style the slides
+    .sample1,
+    .sample2,
+    .sample3,
+    .sample4 {
+      // min-height: 90vh;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      width: 70%;
+      margin: auto;
+      color: white;
+    }
+    .sample-image {
+      height: 80vh;
+      flex-basis: 30rem;
+      img {
+        max-width: 100%;
+      }
+    }
+    .sample-text {
+      flex-basis: 25rem;
+      flex: 1;
+      position: relative;
     }
   }
 }
