@@ -67,12 +67,7 @@ function animateSlides() {
       // the duration will last the whole height of the slide
       duration: "100%",
     })
-      // .addIndicators({
-      //   colorStart: "white",
-      //   colorTrigger: "white",
-      //   name: "page",
-      //   indent: 200,
-      // }) //always you need to remove any semicolomn from here!
+
       // By setting a Pin means that the slide will stuck on the screen and it will stay stuck until the animation scroll ends.
       // The Pin related to the duration we set above. 100% means that will take the full height of the element we selected.
       // To fix the gap of the fade out black space , we add the pushFollowes: false, which will push the next element to show when the fade out finish.
@@ -90,8 +85,17 @@ const mouse = document.querySelector(".cursor");
 const mouseTxt = mouse.querySelector("span");
 // select the burger
 const burger = document.querySelector(".burger");
+// select the arrow to move to the top of the page
+const arrowTop = document.querySelector(".fa-solid");
 
 // FUNCTIONS
+// Move to the top of the page
+function topFunction() {
+  // document.body.scrollTop = 0; // For Safari
+  // document.documentElement.scrollTop = 0; // For Chrome
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 // Cursor function
 function cursor(e) {
   // Modify the styles of the top and left
@@ -157,5 +161,8 @@ window.addEventListener("mousemove", cursor);
 window.addEventListener("mouseover", activeCursor);
 // Burger Event listener
 burger.addEventListener("click", navToggle);
+// Move to the Top of the page
+arrowTop.addEventListener("click", topFunction);
+
 // Call the functions
 animateSlides();

@@ -440,6 +440,7 @@ main .about-page .sample4 .sample-link:hover {
 .dokkodo-page .container .spotify-song {
   padding-right: 2rem;
   padding-top: 2rem;
+  pointer-events: visibleFill;
 }
 
 .title-color-1 {
@@ -515,9 +516,6 @@ main .about-page .sample4 .sample-link:hover {
 }
 
 .cursor {
-  width: 3rem;
-  height: 3rem;
-  border: 2px solid white;
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -567,6 +565,22 @@ footer p a {
 }
 footer p a:hover {
   opacity: 1;
+}
+
+.arrow {
+  display: block;
+  width: 5%;
+  height: 1%;
+  margin-left: auto;
+}
+.arrow .fa-solid {
+  font-size: 2rem;
+  color: rgb(223, 223, 223);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.arrow .fa-solid:hover {
+  transform: scale(1.5);
 }
 
 .scrollmagic-pin-spacer {
