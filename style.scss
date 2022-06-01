@@ -24,6 +24,12 @@ body {
   flex: 1;
   flex-basis: 25rem;
 }
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 // Color Page's Banner
 .container-full {
   width: 100%;
@@ -374,8 +380,17 @@ main {
     background-color: rgb(165, 214, 167);
   }
   .page-description {
+    width: 77%;
     .color-p {
       color: rgb(165, 214, 167);
+    }
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    .spotify-song {
+      padding-right: 2rem;
+      padding-top: 2rem;
     }
   }
 }
