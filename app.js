@@ -117,7 +117,7 @@ function activeCursor(e) {
     mouse.classList.add("explore-active");
     // create the COLOR TITLE animation (to move UP the colored div (.title-color))
     gsap.to(".title-color", 0.5, { y: "0%" });
-    mouseTxt.innerText = "Tap";
+    // mouseTxt.innerText = "Tap";
   } else {
     mouse.classList.remove("explore-active");
     // create the COLOR TITLE animation (to move DOWN the colored div (.title-color))
