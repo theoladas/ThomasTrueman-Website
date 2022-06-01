@@ -572,17 +572,31 @@ footer p a:hover {
   width: 5%;
   height: 1%;
   margin-left: auto;
+  opacity: 0.2;
+  transition: opacity 0.4s ease;
+}
+.arrow:hover {
+  opacity: 1;
 }
 .arrow .fa-solid {
   font-size: 2rem;
   color: rgb(223, 223, 223);
   transition: all 0.4s ease;
+  animation: top 1s ease-in-out infinite;
   cursor: pointer;
 }
 .arrow .fa-solid:hover {
   transform: scale(1.5);
 }
 
+@keyframes top {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+}
 .scrollmagic-pin-spacer {
   position: static !important;
 }

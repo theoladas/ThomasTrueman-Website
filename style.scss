@@ -566,15 +566,30 @@ footer {
   width: 5%;
   height: 1%;
   margin-left: auto;
-
+  opacity: 0.2;
+  transition: opacity 0.4s ease;
+  &:hover {
+    opacity: 1;
+  }
   .fa-solid {
     font-size: 2rem;
     color: rgb(223, 223, 223);
     transition: all 0.4s ease;
+    animation: top 1s ease-in-out infinite;
     cursor: pointer;
     &:hover {
       transform: scale(1.5);
     }
+  }
+}
+// Animation Arrow to the Top
+@keyframes top {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 5px);
   }
 }
 // Fix issue when scroll to be clickable the Explore btn
