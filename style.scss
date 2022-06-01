@@ -24,8 +24,31 @@ body {
   flex: 1;
   flex-basis: 25rem;
 }
+// Color Page's Banner
 .container-full {
   width: 100%;
+  min-height: 10vh;
+}
+// Page's Head title
+.page-description {
+  margin: 0 auto;
+  h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    margin-top: -48px;
+    padding-bottom: 4rem;
+  }
+  p {
+    width: 90%;
+    margin: 0 auto;
+    // text-align: center;
+    font-size: 1.2rem;
+    line-height: 30px;
+    color: rgb(223, 223, 223);
+    padding-bottom: 1rem;
+  }
 }
 // Header
 .nav-header {
@@ -156,36 +179,17 @@ main {
     }
   }
 
-  // SAMPLE PACK PAGE
+  // Other PAGES
   .sample-pack-page,
   .about-page {
     // Colored banner
     .container-full {
-      min-height: 10vh;
       background-color: rgb(86, 124, 228);
       &.about-container {
         background-color: rgb(255, 139, 93);
       }
     }
-    // Page's Head title
-    .page-description {
-      width: 50%;
-      margin: 0 auto;
-      h1 {
-        font-family: "Bebas Neue", cursive;
-        font-size: 5rem;
-        text-align: center;
-        color: white;
-        margin-top: -48px;
-      }
-      p {
-        text-align: center;
-        font-size: 1rem;
-        line-height: 30px;
-        color: rgb(223, 223, 223);
-        padding-bottom: 5rem;
-      }
-    }
+
     // Style the slides
     .sample1,
     .sample2,
@@ -203,7 +207,6 @@ main {
       color: white;
       &.about1 {
         min-height: 50vh;
-        padding: 8rem 0rem;
       }
       .sample-text {
         flex-basis: 25rem;
@@ -255,14 +258,8 @@ main {
       .sample-number {
         font-size: 10rem;
         position: absolute;
-        // right
         bottom: -0%;
         right: -5%;
-        // Top
-        // top: -0%;
-        // right: -5%;
-
-        //
         opacity: 0.2;
       }
       .sample-link {
@@ -361,6 +358,12 @@ main {
   }
 }
 
+// DOKKODO PAGE
+.dokkodo-page {
+  .dokkodo-container {
+    background-color: rgb(165, 214, 167);
+  }
+}
 // Match the color title text of each section
 .title-color-1 {
   background: rgb(255, 139, 93);
