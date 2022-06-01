@@ -246,9 +246,19 @@ main .about-page .sample3 .sample-text.about-text p,
 main .about-page .sample4 .sample-text.about-text p {
   font-size: 1.2rem;
   padding-top: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   line-height: 30px;
   margin-bottom: 0.5rem;
+}
+main .sample-pack-page .sample1 .sample-text.about-text .move-padding-bottom,
+main .sample-pack-page .sample2 .sample-text.about-text .move-padding-bottom,
+main .sample-pack-page .sample3 .sample-text.about-text .move-padding-bottom,
+main .sample-pack-page .sample4 .sample-text.about-text .move-padding-bottom,
+main .about-page .sample1 .sample-text.about-text .move-padding-bottom,
+main .about-page .sample2 .sample-text.about-text .move-padding-bottom,
+main .about-page .sample3 .sample-text.about-text .move-padding-bottom,
+main .about-page .sample4 .sample-text.about-text .move-padding-bottom {
+  margin-bottom: 8rem;
 }
 main .sample-pack-page .sample1 .sample-image img,
 main .sample-pack-page .sample2 .sample-image img,
@@ -316,8 +326,12 @@ main .about-page .sample4 .sample-link {
   width: 200px;
   cursor: pointer;
 }
-main .sample-pack-page .sample1 h2,
-main .about-page .sample1 h2 {
+main .sample-pack-page .sample1 .sample-text,
+main .about-page .sample1 .sample-text {
+  padding-top: 5rem;
+}
+main .sample-pack-page .sample1 .sample-text h2,
+main .about-page .sample1 .sample-text h2 {
   color: rgb(212, 108, 171);
 }
 main .sample-pack-page .sample1 .sample-number,
@@ -338,9 +352,16 @@ main .sample-pack-page .sample2 h2,
 main .about-page .sample2 h2 {
   color: rgb(140, 206, 222);
 }
+main .sample-pack-page .sample2 .sample-image,
+main .about-page .sample2 .sample-image {
+  padding-right: 3rem;
+  padding-top: 5rem;
+}
 main .sample-pack-page .sample2 .sample-number,
 main .about-page .sample2 .sample-number {
   color: rgb(140, 206, 222);
+  bottom: -5%;
+  left: -5%;
 }
 main .sample-pack-page .sample2 .sample-link,
 main .about-page .sample2 .sample-link {
@@ -366,9 +387,16 @@ main .sample-pack-page .sample4 h2,
 main .about-page .sample4 h2 {
   color: rgb(238, 145, 137);
 }
+main .sample-pack-page .sample4 .sample-image,
+main .about-page .sample4 .sample-image {
+  padding-right: 3rem;
+  padding-top: 5rem;
+}
 main .sample-pack-page .sample4 .sample-number,
 main .about-page .sample4 .sample-number {
   color: rgb(238, 145, 137);
+  bottom: -5%;
+  left: -5%;
 }
 main .sample-pack-page .sample4 .sample-link,
 main .about-page .sample4 .sample-link {

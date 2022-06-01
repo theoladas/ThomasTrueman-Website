@@ -224,9 +224,12 @@ main {
           p {
             font-size: 1.2rem;
             padding-top: 0;
-            padding-bottom: 1rem;
+            padding-bottom: 0.5rem;
             line-height: 30px;
             margin-bottom: 0.5rem;
+          }
+          .move-padding-bottom {
+            margin-bottom: 8rem;
           }
         }
       }
@@ -258,9 +261,7 @@ main {
         // Top
         // top: -0%;
         // right: -5%;
-        // left
-        // bottom: -0%;
-        // left: 58%;
+
         //
         opacity: 0.2;
       }
@@ -280,9 +281,13 @@ main {
     }
     // Add Color to Slide's Title , Text number, Link
     .sample1 {
-      h2 {
-        color: rgba(212, 108, 171, 255);
+      .sample-text {
+        padding-top: 5rem;
+        h2 {
+          color: rgba(212, 108, 171, 255);
+        }
       }
+
       .sample-number {
         color: rgba(212, 108, 171, 255);
       }
@@ -301,8 +306,14 @@ main {
       h2 {
         color: rgba(140, 206, 222, 255);
       }
+      .sample-image {
+        padding-right: 3rem;
+        padding-top: 5rem;
+      }
       .sample-number {
         color: rgba(140, 206, 222, 255);
+        bottom: -5%;
+        left: -5%;
       }
       .sample-link {
         border: 1px solid rgba(140, 206, 222, 255);
@@ -329,8 +340,14 @@ main {
         // color: rgba(203, 184, 167, 255);
         color: rgba(238, 145, 137, 255);
       }
+      .sample-image {
+        padding-right: 3rem;
+        padding-top: 5rem;
+      }
       .sample-number {
         color: rgba(238, 145, 137, 255);
+        bottom: -5%;
+        left: -5%;
       }
       .sample-link {
         border: 1px solid rgba(238, 145, 137, 255);
