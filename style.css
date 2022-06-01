@@ -465,10 +465,8 @@ main .about-page .sample4 .sample-link:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/images/artwork.jpg");
-  background-size: initial;
-  background-position: top left;
-  background-repeat: no-repeat;
+  background-image: url("/images/artwork 1.png");
+  background-size: inherit;
   display: flex;
   align-items: center;
   justify-content: space-around;
