@@ -33,6 +33,11 @@ body {
   flex-wrap: wrap;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .container-full {
   width: 100%;
   min-height: 10vh;
@@ -427,20 +432,16 @@ main .about-page .sample4 .sample-link:hover {
 .dokkodo-page .dokkodo-container {
   background-color: rgb(165, 214, 167);
 }
-.dokkodo-page .page-description {
-  width: 77%;
-}
 .dokkodo-page .page-description .color-p {
   color: rgb(165, 214, 167);
-}
-.dokkodo-page .container {
-  width: 80%;
-  margin: 0 auto;
 }
 .dokkodo-page .container .spotify-song {
   padding-right: 2rem;
   padding-top: 2rem;
-  pointer-events: visibleFill;
+}
+
+.production-page .production-container {
+  background-color: rgb(167, 110, 231);
 }
 
 .title-color-1 {

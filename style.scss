@@ -30,6 +30,10 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 // Color Page's Banner
 .container-full {
   width: 100%;
@@ -380,22 +384,21 @@ main {
     background-color: rgb(165, 214, 167);
   }
   .page-description {
-    width: 77%;
     .color-p {
       color: rgb(165, 214, 167);
     }
   }
   .container {
-    width: 80%;
-    margin: 0 auto;
     .spotify-song {
       padding-right: 2rem;
       padding-top: 2rem;
-      pointer-events: visibleFill;
-      // iframe {
-
-      // }
     }
+  }
+}
+// PRODUCTION PAGE
+.production-page {
+  .production-container {
+    background-color: rgb(167, 110, 231);
   }
 }
 // Match the color title text of each section
