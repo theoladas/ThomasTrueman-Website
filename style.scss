@@ -396,21 +396,57 @@ main {
   }
 }
 // PRODUCTION PAGE
-.production-page {
-  min-height: 80vh;
-  background-image: url("/production/images/production-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  .production-container {
-    background-color: rgb(167, 110, 231);
-  }
-  .page-description {
-    a {
-      color: rgb(167, 110, 231);
+main {
+  .production-page {
+    min-height: 80vh;
+    .production-container {
+      background-color: rgb(167, 110, 231);
+    }
+    .page-description {
+      .flex-row {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-image: url("/production/images/production-bg-pink.png");
+        background-position: right bottom;
+        padding-bottom: 8rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        .info {
+          padding-left: 2rem;
+          padding-top: 2rem;
+          width: 55%;
+          p {
+            width: 100%;
+          }
+          .pinnacle-container {
+            display: block;
+            width: 10%;
+            padding-top: 2rem;
+            // padding-top: 2rem;
+            // padding-left: 3rem;
+            a {
+              padding: 1rem 2rem;
+              font-size: 1rem;
+              border: 1px solid rgb(167, 110, 231);
+              text-decoration: none;
+              color: white;
+              opacity: 0.7;
+              transition: all 0.5s ease;
+              &:hover {
+                opacity: 1;
+                background-color: rgb(167, 110, 231);
+              }
+            }
+          }
+        }
+      }
+      a {
+        color: rgb(167, 110, 231);
+      }
     }
   }
 }
+
 // Match the color title text of each section
 .title-color-1 {
   background: rgb(255, 139, 93);
