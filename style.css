@@ -441,7 +441,11 @@ main .about-page .sample4 .sample-link:hover {
 }
 
 .production-page {
-  min-height: 90vh;
+  min-height: 80vh;
+  background-image: url("/production/images/production-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .production-page .production-container {
   background-color: rgb(167, 110, 231);
