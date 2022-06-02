@@ -440,8 +440,14 @@ main .about-page .sample4 .sample-link:hover {
   padding-top: 2rem;
 }
 
+.production-page {
+  min-height: 90vh;
+}
 .production-page .production-container {
   background-color: rgb(167, 110, 231);
+}
+.production-page .page-description a {
+  color: rgb(167, 110, 231);
 }
 
 .title-color-1 {

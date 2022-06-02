@@ -397,8 +397,14 @@ main {
 }
 // PRODUCTION PAGE
 .production-page {
+  min-height: 90vh;
   .production-container {
     background-color: rgb(167, 110, 231);
+  }
+  .page-description {
+    a {
+      color: rgb(167, 110, 231);
+    }
   }
 }
 // Match the color title text of each section
