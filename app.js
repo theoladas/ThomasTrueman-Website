@@ -166,3 +166,38 @@ arrowTop.addEventListener("click", topFunction);
 
 // Call the functions
 animateSlides();
+
+// Barba Code
+barba.init({
+  views: [
+    {
+      namespace: "home",
+      beforeEnter() {
+        animateSlides();
+      },
+      beforeLeave() {
+        slideScene.destroy();
+        pageScene.destroy();
+        controller.destroy();
+      },
+    },
+    {
+      namespace: "about",
+    },
+    {
+      namespace: "dokkodo",
+    },
+    {
+      namespace: "production",
+    },
+    {
+      namespace: "sample",
+    },
+  ],
+  transition: [
+    {
+      leave({ current, next }) {},
+      enter({ current, next }) {},
+    },
+  ],
+});
