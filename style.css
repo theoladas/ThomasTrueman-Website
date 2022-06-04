@@ -570,7 +570,12 @@ main .production-page .page-description a {
 .nav-bar .contact p a {
   color: black;
   text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.4s ease;
   cursor: pointer;
+}
+.nav-bar .contact p a:hover {
+  opacity: 1;
 }
 
 .reveal-image,
