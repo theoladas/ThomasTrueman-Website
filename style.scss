@@ -493,24 +493,49 @@ main {
   .nav-links {
     font-size: 2rem;
     flex-basis: 30rem;
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .instagram-link {
+        transition: all 0.4s ease;
+        &:hover {
+          background: -webkit-linear-gradient(
+            #405de6,
+            #5851db,
+            #833ab4,
+            #c13584,
+            #e1306c,
+            #fd1d1d
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .soundcloud-link {
+        &:hover {
+          color: #ff7700;
+        }
+      }
+      .apple-link {
+        &:hover {
+          background: -webkit-linear-gradient(#fc3c44, #f94c57, #c2cad7);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .spotify-link {
+        &:hover {
+          color: #1db954;
+        }
+      }
+    }
     h3 {
       padding: 3rem 0rem;
-    }
-    .instagram-txt {
-      transition: all 0.4s ease;
-      &:hover {
-        background: -webkit-linear-gradient(
-          #405de6,
-          #5851db,
-          #833ab4,
-          #c13584,
-          #e1306c,
-          #fd1d1d
-        );
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
     }
   }
   .contact {

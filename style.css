@@ -544,17 +544,36 @@ main .production-page .page-description a {
   font-size: 2rem;
   flex-basis: 30rem;
 }
-.nav-bar .nav-links h3 {
-  padding: 3rem 0rem;
+.nav-bar .nav-links li {
+  list-style-type: none;
 }
-.nav-bar .nav-links .instagram-txt {
+.nav-bar .nav-links li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-bar .nav-links li .instagram-link {
   transition: all 0.4s ease;
 }
-.nav-bar .nav-links .instagram-txt:hover {
+.nav-bar .nav-links li .instagram-link:hover {
   background: -webkit-linear-gradient(#405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.nav-bar .nav-links li .soundcloud-link:hover {
+  color: #ff7700;
+}
+.nav-bar .nav-links li .apple-link:hover {
+  background: -webkit-linear-gradient(#fc3c44, #f94c57, #c2cad7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-bar .nav-links li .spotify-link:hover {
+  color: #1db954;
+}
+.nav-bar .nav-links h3 {
+  padding: 3rem 0rem;
 }
 .nav-bar .contact {
   flex-basis: 30rem;
