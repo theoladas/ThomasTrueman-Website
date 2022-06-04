@@ -104,7 +104,7 @@ body {
 main {
   //Slides
   .slide {
-    min-height: 95vh;
+    min-height: 90vh;
     margin: 0 auto;
     width: 90%;
     color: white;
@@ -585,38 +585,37 @@ footer {
     color: white;
     font-size: 0.75rem;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
     a {
       text-decoration: none;
       text-transform: none;
       color: white;
-      opacity: 0.7;
+      opacity: 0.6;
       transition: all 0.4s ease;
       &:hover {
         opacity: 1;
       }
     }
   }
-  // .social-links {
-  //   text-align: center;
-  //   li {
-  //     list-style-type: none;
-  //     color: white;
-
-  //     a {
-  //       padding-left: 1rem;
-  //       opacity: 0.7;
-  //       transition: all 0.4s ease;
-  //       &:hover {
-  //         opacity: 1;
-  //       }
-  //       .fab {
-  //         font-size: 1rem;
-  //         color: white;
-  //       }
-  //     }
-  //   }
-  // }
+  .social-links {
+    li {
+      list-style-type: none;
+      // color: white;
+      a {
+        .fab,
+        .fa-spotify {
+          font-size: 1rem;
+          color: white;
+        }
+        padding: 0 0.7rem;
+        opacity: 0.6;
+        transition: opacity 0.4s ease;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 
 // Arrow Up
