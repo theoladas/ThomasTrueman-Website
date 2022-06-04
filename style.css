@@ -270,6 +270,29 @@ main .about-page .sample4 .sample-text.about-text p {
   line-height: 30px;
   margin-bottom: 0.5rem;
 }
+main .sample-pack-page .sample1 .sample-text.about-text a,
+main .sample-pack-page .sample2 .sample-text.about-text a,
+main .sample-pack-page .sample3 .sample-text.about-text a,
+main .sample-pack-page .sample4 .sample-text.about-text a,
+main .about-page .sample1 .sample-text.about-text a,
+main .about-page .sample2 .sample-text.about-text a,
+main .about-page .sample3 .sample-text.about-text a,
+main .about-page .sample4 .sample-text.about-text a {
+  color: rgb(255, 139, 93);
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.4s ease;
+}
+main .sample-pack-page .sample1 .sample-text.about-text a:hover,
+main .sample-pack-page .sample2 .sample-text.about-text a:hover,
+main .sample-pack-page .sample3 .sample-text.about-text a:hover,
+main .sample-pack-page .sample4 .sample-text.about-text a:hover,
+main .about-page .sample1 .sample-text.about-text a:hover,
+main .about-page .sample2 .sample-text.about-text a:hover,
+main .about-page .sample3 .sample-text.about-text a:hover,
+main .about-page .sample4 .sample-text.about-text a:hover {
+  opacity: 1;
+}
 main .sample-pack-page .sample1 .sample-text.about-text .move-padding-bottom,
 main .sample-pack-page .sample2 .sample-text.about-text .move-padding-bottom,
 main .sample-pack-page .sample3 .sample-text.about-text .move-padding-bottom,
