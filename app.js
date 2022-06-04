@@ -86,7 +86,7 @@ const mouseTxt = mouse.querySelector("span");
 // select the burger
 const burger = document.querySelector(".burger");
 // select the arrow to move to the top of the page
-const arrowTop = document.querySelector(".fa-solid");
+const arrowTop = document.querySelector(".fa-arrow-up");
 
 // FUNCTIONS
 // Move to the top of the page
