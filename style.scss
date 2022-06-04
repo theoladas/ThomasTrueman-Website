@@ -85,10 +85,21 @@ body {
   #logo {
     color: white;
     font-family: "Abril Fatface", cursive;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+    &:hover {
+      opacity: 1;
+    }
   }
   // Burger
   .burger {
+    opacity: 0.7;
     cursor: pointer;
+    transition: opacity 0.4s ease;
+    &:hover {
+      opacity: 1;
+    }
     .line1,
     .line2 {
       width: 2rem;

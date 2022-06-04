@@ -85,9 +85,20 @@ body {
 .nav-header #logo {
   color: white;
   font-family: "Abril Fatface", cursive;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+.nav-header #logo:hover {
+  opacity: 1;
 }
 .nav-header .burger {
+  opacity: 0.7;
   cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+.nav-header .burger:hover {
+  opacity: 1;
 }
 .nav-header .burger .line1,
 .nav-header .burger .line2 {
