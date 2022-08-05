@@ -169,51 +169,51 @@ animateSlides();
 
 // Barba Code
 // fix the home page link
-// const logo = document.querySelector("#logo");
-// barba.init({
-//   views: [
-//     {
-//       namespace: "home",
-//       beforeEnter() {
-//         animateSlides();
-//         logo.href = "./index.html";
-//       },
-//       beforeLeave() {
-//         slideScene.destroy();
-//         pageScene.destroy();
-//         controller.destroy();
-//       },
-//     },
-//     {
-//       namespace: "about",
-//       beforeEnter() {
-//         logo.href = "../index.html";
-//       },
-//     },
-//   ],
-//   transition: [
-//     {
-//       leave({ current, next }) {
-//         let done = this.async();
-//         // create animation
-//         const t1 = gsap.timeline({ defaults: { ease: "power2.inOut" } });
-//         t1.fromTo(
-//           current.container,
-//           1,
-//           { opacity: 1 },
-//           { opacity: 0, onComplete: done }
-//         );
-//       },
-//       enter({ current, next }) {
-//         // create animation
-//         const t1 = gsap.timeline({ defaults: { ease: "power2.inOut" } });
-//         t1.fromTo(
-//           next.container,
-//           1,
-//           { opacity: 0 },
-//           { opacity: 1, onComplete: done }
-//         );
-//       },
-//     },
-//   ],
-// });
+const logo = document.querySelector("#logo");
+barba.init({
+  views: [
+    {
+      namespace: "home",
+      beforeEnter() {
+        animateSlides();
+        logo.href = "./index.html";
+      },
+      beforeLeave() {
+        slideScene.destroy();
+        pageScene.destroy();
+        controller.destroy();
+      },
+    },
+    {
+      namespace: "about",
+      beforeEnter() {
+        logo.href = "../index.html";
+      },
+    },
+  ],
+  transition: [
+    {
+      leave({ current, next }) {
+        let done = this.async();
+        // create animation
+        const t1 = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+        t1.fromTo(
+          current.container,
+          1,
+          { opacity: 1 },
+          { opacity: 0, onComplete: done }
+        );
+      },
+      enter({ current, next }) {
+        // create animation
+        const t1 = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+        t1.fromTo(
+          next.container,
+          1,
+          { opacity: 0 },
+          { opacity: 1, onComplete: done }
+        );
+      },
+    },
+  ],
+});
