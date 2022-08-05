@@ -10,7 +10,11 @@ body {
   font-family: "Montserrat", sans-serif;
   // to hide the scroll horizontal bar
   overflow-x: hidden;
+  // position: relative;
 }
+// main {
+//   position: absolute;
+// }
 .flex-row {
   display: flex;
   align-items: center;

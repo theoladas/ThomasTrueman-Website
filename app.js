@@ -154,19 +154,6 @@ function navToggle(e) {
   }
 }
 
-// EVENT LISTENERS
-// We want to trigger the window object when we move the mouse(to get the position y and x)
-window.addEventListener("mousemove", cursor);
-// We want when hover elements to create an animation
-window.addEventListener("mouseover", activeCursor);
-// Burger Event listener
-burger.addEventListener("click", navToggle);
-// Move to the Top of the page
-arrowTop.addEventListener("click", topFunction);
-
-// Call the functions
-animateSlides();
-
 // Barba Code
 // fix the home page link
 const logo = document.querySelector("#logo");
@@ -191,13 +178,13 @@ barba.init({
       },
     },
   ],
-  transition: [
+  transitions: [
     {
       leave({ current, next }) {
         let done = this.async();
         // create animation
-        const t1 = gsap.timeline({ defaults: { ease: "power2.inOut" } });
-        t1.fromTo(
+        const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+        tl.fromTo(
           current.container,
           1,
           { opacity: 1 },
@@ -205,9 +192,12 @@ barba.init({
         );
       },
       enter({ current, next }) {
+        let done = this.async();
+        // Scroll to the top
+        window.scrollTo(0, 0);
         // create animation
-        const t1 = gsap.timeline({ defaults: { ease: "power2.inOut" } });
-        t1.fromTo(
+        const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+        tl.fromTo(
           next.container,
           1,
           { opacity: 0 },
@@ -217,3 +207,16 @@ barba.init({
     },
   ],
 });
+
+// EVENT LISTENERS
+// We want to trigger the window object when we move the mouse(to get the position y and x)
+window.addEventListener("mousemove", cursor);
+// We want when hover elements to create an animation
+window.addEventListener("mouseover", activeCursor);
+// Burger Event listener
+burger.addEventListener("click", navToggle);
+// Move to the Top of the page
+arrowTop.addEventListener("click", topFunction);
+
+// Call the functions
+// animateSlides();
