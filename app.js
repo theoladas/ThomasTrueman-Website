@@ -177,6 +177,24 @@ barba.init({
         logo.href = "../index.html";
       },
     },
+    {
+      namespace: "dokkodo-page",
+      beforeEnter() {
+        logo.href = "../index.html";
+      },
+    },
+    {
+      namespace: "production",
+      beforeEnter() {
+        logo.href = "../index.html";
+      },
+    },
+    {
+      namespace: "sample",
+      beforeEnter() {
+        logo.href = "../index.html";
+      },
+    },
   ],
   transitions: [
     {
