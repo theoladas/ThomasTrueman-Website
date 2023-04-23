@@ -21,14 +21,30 @@ main {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 830px) {
+  .flex-row {
+    flex-direction: column;
+  }
+}
 
 .flex-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex: 1;
   flex-basis: 25rem;
+}
+@media (max-width: 1024px) {
+  .flex-column {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 830px) {
+  .flex-column {
+    align-items: center;
+    justify-content: initial;
+  }
 }
 
 .flex-center {
@@ -113,6 +129,11 @@ main {
   background: white;
   pointer-events: none;
 }
+@media (max-width: 830px) {
+  .nav-header {
+    flex-direction: row;
+  }
+}
 
 main .slide {
   min-height: 90vh;
@@ -127,14 +148,35 @@ main .hero-img {
   flex-basis: 25rem;
   overflow: hidden;
 }
+@media (max-width: 830px) {
+  main .hero-img {
+    width: 100%;
+  }
+}
 main .hero-img img {
   width: 95%;
   height: 100%;
   object-fit: cover;
 }
+@media (max-width: 830px) {
+  main .hero-img img {
+    width: 100%;
+  }
+}
 main .hero-description {
   padding-left: 5rem;
   position: relative;
+}
+@media (max-width: 1024px) {
+  main .hero-description {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 830px) {
+  main .hero-description {
+    text-align: center;
+    padding-left: 0;
+  }
 }
 main .hero-description .title {
   position: relative;
@@ -143,6 +185,18 @@ main .hero-description .title {
 main .hero-description .title h2 {
   font-family: "Bebas Neue", cursive;
   font-size: 5rem;
+  line-height: 1;
+}
+@media (max-width: 1024px) {
+  main .hero-description .title h2 {
+    font-size: 4.75rem;
+    line-height: 1;
+  }
+}
+@media (max-width: 830px) {
+  main .hero-description .title h2 {
+    padding-top: 1rem;
+  }
 }
 main .hero-description .title h2 .about-span {
   color: rgb(255, 139, 93);
@@ -171,6 +225,16 @@ main .hero-description p {
   line-height: 35px;
   color: rgb(223, 223, 223);
 }
+@media (max-width: 1024px) {
+  main .hero-description p {
+    padding: 1rem 0rem;
+  }
+}
+@media (max-width: 1024px) {
+  main .hero-description p {
+    margin-bottom: 1rem;
+  }
+}
 main .hero-description .explore {
   padding: 1rem 2rem;
   background: none;
@@ -180,6 +244,12 @@ main .hero-description .explore {
   text-decoration: none;
   align-self: flex-start;
   cursor: pointer;
+}
+@media (max-width: 830px) {
+  main .hero-description .explore {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 main .hero-description a {
   opacity: 0.5;

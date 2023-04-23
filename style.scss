@@ -19,14 +19,24 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 830px) {
+    flex-direction: column;
+  }
 }
 .flex-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex: 1;
   flex-basis: 25rem;
+  @media (max-width: 1024px) {
+    align-items: flex-start;
+  }
+  @media (max-width: 830px) {
+    align-items: center;
+    justify-content: initial;
+  }
 }
 .flex-center {
   display: flex;
@@ -113,6 +123,9 @@ main {
       pointer-events: none;
     }
   }
+  @media (max-width: 830px) {
+    flex-direction: row;
+  }
 }
 
 // Main
@@ -132,16 +145,29 @@ main {
     flex-basis: 25rem;
     // Add an overflow:hidden so the slideTimeline scale works
     overflow: hidden;
+    @media (max-width: 830px) {
+      width: 100%;
+    }
     img {
       width: 95%;
       height: 100%;
       object-fit: cover;
+      @media (max-width: 830px) {
+        width: 100%;
+      }
     }
   }
   // Hero description
   .hero-description {
     padding-left: 5rem;
     position: relative;
+    @media (max-width: 1024px) {
+      padding-left: 1rem;
+    }
+    @media (max-width: 830px) {
+      text-align: center;
+      padding-left: 0;
+    }
     .title {
       // to add the bg-color (title-color div) only to the title
       position: relative;
@@ -149,6 +175,14 @@ main {
       h2 {
         font-family: "Bebas Neue", cursive;
         font-size: 5rem;
+        line-height: 1;
+        @media (max-width: 1024px) {
+          font-size: 4.75rem;
+          line-height: 1;
+        }
+        @media (max-width: 830px) {
+          padding-top: 1rem;
+        }
         .about-span {
           color: rgb(255, 139, 93);
         }
@@ -191,6 +225,12 @@ main {
       font-size: 1.5rem;
       line-height: 35px;
       color: rgb(223, 223, 223);
+      @media (max-width: 1024px) {
+        padding: 1rem 0rem;
+      }
+      @media (max-width: 1024px) {
+        margin-bottom: 1rem;
+      }
     }
     .explore {
       padding: 1rem 2rem;
@@ -201,6 +241,10 @@ main {
       text-decoration: none;
       align-self: flex-start;
       cursor: pointer;
+      @media (max-width: 830px) {
+        margin: 0 auto;
+        width: 100%;
+      }
     }
     a {
       opacity: 0.5;
