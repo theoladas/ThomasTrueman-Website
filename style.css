@@ -319,6 +319,18 @@ main .about-page .sample4 .sample-text h2 {
   font-size: 3.5rem;
   padding: 2rem 0rem;
 }
+@media (max-width: 1024px) {
+  main .sample-pack-page .sample1 .sample-text h2,
+  main .sample-pack-page .sample2 .sample-text h2,
+  main .sample-pack-page .sample3 .sample-text h2,
+  main .sample-pack-page .sample4 .sample-text h2,
+  main .about-page .sample1 .sample-text h2,
+  main .about-page .sample2 .sample-text h2,
+  main .about-page .sample3 .sample-text h2,
+  main .about-page .sample4 .sample-text h2 {
+    padding-bottom: 1rem;
+  }
+}
 main .sample-pack-page .sample1 .sample-text p,
 main .sample-pack-page .sample2 .sample-text p,
 main .sample-pack-page .sample3 .sample-text p,
@@ -331,6 +343,18 @@ main .about-page .sample4 .sample-text p {
   line-height: 35px;
   padding: 1rem 2rem 0rem 0rem;
   margin-bottom: 3rem;
+}
+@media (max-width: 1024px) {
+  main .sample-pack-page .sample1 .sample-text p,
+  main .sample-pack-page .sample2 .sample-text p,
+  main .sample-pack-page .sample3 .sample-text p,
+  main .sample-pack-page .sample4 .sample-text p,
+  main .about-page .sample1 .sample-text p,
+  main .about-page .sample2 .sample-text p,
+  main .about-page .sample3 .sample-text p,
+  main .about-page .sample4 .sample-text p {
+    padding: 0;
+  }
 }
 main .sample-pack-page .sample1 .sample-text.about-text,
 main .sample-pack-page .sample2 .sample-text.about-text,
@@ -391,6 +415,18 @@ main .about-page .sample2 .sample-text.about-text .move-padding-bottom,
 main .about-page .sample3 .sample-text.about-text .move-padding-bottom,
 main .about-page .sample4 .sample-text.about-text .move-padding-bottom {
   margin-bottom: 8rem;
+}
+@media (max-width: 1024px) {
+  main .sample-pack-page .sample1 .sample-image,
+  main .sample-pack-page .sample2 .sample-image,
+  main .sample-pack-page .sample3 .sample-image,
+  main .sample-pack-page .sample4 .sample-image,
+  main .about-page .sample1 .sample-image,
+  main .about-page .sample2 .sample-image,
+  main .about-page .sample3 .sample-image,
+  main .about-page .sample4 .sample-image {
+    order: -1;
+  }
 }
 main .sample-pack-page .sample1 .sample-image img,
 main .sample-pack-page .sample2 .sample-image img,
@@ -460,7 +496,14 @@ main .about-page .sample4 .sample-link {
 }
 main .sample-pack-page .sample1 .sample-text,
 main .about-page .sample1 .sample-text {
-  padding-top: 5rem;
+  padding-top: 2rem;
+}
+@media (max-width: 1030px) {
+  main .sample-pack-page .sample1 .sample-text,
+  main .about-page .sample1 .sample-text {
+    padding-top: 0;
+    text-align: center;
+  }
 }
 main .sample-pack-page .sample1 .sample-text h2,
 main .about-page .sample1 .sample-text h2 {
@@ -479,6 +522,13 @@ main .about-page .sample1 .sample-link {
 main .sample-pack-page .sample1 .sample-link:hover,
 main .about-page .sample1 .sample-link:hover {
   background-color: rgb(212, 108, 171);
+}
+@media (max-width: 1030px) {
+  main .sample-pack-page .sample1 .sample-link,
+  main .about-page .sample1 .sample-link {
+    display: block;
+    margin: 0 auto;
+  }
 }
 main .sample-pack-page .sample1 .flex-row,
 main .about-page .sample1 .flex-row {
@@ -542,14 +592,37 @@ main .sample-pack-page .sample1 .flex-row .about-text .move-padding-bottom,
 main .about-page .sample1 .flex-row .about-text .move-padding-bottom {
   margin-bottom: 8rem;
 }
-main .sample-pack-page .sample2 h2,
-main .about-page .sample2 h2 {
+main .sample-pack-page .sample2 .sample-text,
+main .about-page .sample2 .sample-text {
+  padding-top: 2rem;
+}
+@media (max-width: 1030px) {
+  main .sample-pack-page .sample2 .sample-text,
+  main .about-page .sample2 .sample-text {
+    padding-top: 0;
+    text-align: center;
+  }
+}
+main .sample-pack-page .sample2 .sample-text h2,
+main .about-page .sample2 .sample-text h2 {
   color: rgb(140, 206, 222);
+}
+@media (max-width: 1030px) {
+  main .sample-pack-page .sample2 .sample-text h2,
+  main .about-page .sample2 .sample-text h2 {
+    padding-top: 0;
+  }
 }
 main .sample-pack-page .sample2 .sample-image,
 main .about-page .sample2 .sample-image {
   padding-right: 3rem;
   padding-top: 5rem;
+}
+@media (max-width: 1024px) {
+  main .sample-pack-page .sample2 .sample-image,
+  main .about-page .sample2 .sample-image {
+    padding: 2rem 0;
+  }
 }
 main .sample-pack-page .sample2 .sample-number,
 main .about-page .sample2 .sample-number {
@@ -567,6 +640,34 @@ main .sample-pack-page .sample2 .sample-link:hover,
 main .about-page .sample2 .sample-link:hover {
   background-color: rgb(140, 206, 222);
 }
+@media (max-width: 1030px) {
+  main .sample-pack-page .sample2 .sample-link,
+  main .about-page .sample2 .sample-link {
+    display: block;
+    margin: 0 auto;
+  }
+}
+main .sample-pack-page .sample3 .sample-text,
+main .about-page .sample3 .sample-text {
+  padding-top: 2rem;
+}
+@media (max-width: 1030px) {
+  main .sample-pack-page .sample3 .sample-text,
+  main .about-page .sample3 .sample-text {
+    padding-top: 0;
+    text-align: center;
+  }
+  main .sample-pack-page .sample3 .sample-text h2,
+  main .about-page .sample3 .sample-text h2 {
+    padding-top: 0;
+  }
+}
+@media (max-width: 1024px) {
+  main .sample-pack-page .sample3 .sample-image,
+  main .about-page .sample3 .sample-image {
+    padding: 2rem 0;
+  }
+}
 main .sample-pack-page .sample3 .sample-link,
 main .about-page .sample3 .sample-link {
   border: 2px solid black;
@@ -577,14 +678,44 @@ main .sample-pack-page .sample3 .sample-link:hover,
 main .about-page .sample3 .sample-link:hover {
   background-color: black;
 }
-main .sample-pack-page .sample4 h2,
-main .about-page .sample4 h2 {
+@media (max-width: 1030px) {
+  main .sample-pack-page .sample3 .sample-link,
+  main .about-page .sample3 .sample-link {
+    display: block;
+    margin: 0 auto;
+  }
+}
+main .sample-pack-page .sample4 .sample-text,
+main .about-page .sample4 .sample-text {
+  padding-top: 2rem;
+}
+@media (max-width: 1030px) {
+  main .sample-pack-page .sample4 .sample-text,
+  main .about-page .sample4 .sample-text {
+    padding-top: 0;
+    text-align: center;
+  }
+}
+main .sample-pack-page .sample4 .sample-text h2,
+main .about-page .sample4 .sample-text h2 {
   color: rgb(238, 145, 137);
+}
+@media (max-width: 1030px) {
+  main .sample-pack-page .sample4 .sample-text h2,
+  main .about-page .sample4 .sample-text h2 {
+    padding-top: 0;
+  }
 }
 main .sample-pack-page .sample4 .sample-image,
 main .about-page .sample4 .sample-image {
   padding-right: 3rem;
   padding-top: 5rem;
+}
+@media (max-width: 1024px) {
+  main .sample-pack-page .sample4 .sample-image,
+  main .about-page .sample4 .sample-image {
+    padding: 2rem 0;
+  }
 }
 main .sample-pack-page .sample4 .sample-number,
 main .about-page .sample4 .sample-number {
@@ -601,6 +732,13 @@ main .about-page .sample4 .sample-link {
 main .sample-pack-page .sample4 .sample-link:hover,
 main .about-page .sample4 .sample-link:hover {
   background-color: rgb(238, 145, 137);
+}
+@media (max-width: 1030px) {
+  main .sample-pack-page .sample4 .sample-link,
+  main .about-page .sample4 .sample-link {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .dokkodo-page .dokkodo-container {

@@ -289,14 +289,21 @@ main {
         flex-basis: 25rem;
         flex: 1;
         position: relative;
+
         h2 {
           font-size: 3.5rem;
           padding: 2rem 0rem;
+          @media (max-width: 1024px) {
+            padding-bottom: 1rem;
+          }
         }
         p {
           font-size: 1.5rem;
           line-height: 35px;
           padding: 1rem 2rem 0rem 0rem;
+          @media (max-width: 1024px) {
+            padding: 0;
+          }
           margin-bottom: 3rem;
         }
         &.about-text {
@@ -326,6 +333,9 @@ main {
         }
       }
       .sample-image {
+        @media (max-width: 1024px) {
+          order: -1;
+        }
         img {
           max-width: 100%;
           border-radius: 10px;
@@ -362,7 +372,11 @@ main {
     // Add Color to Slide's Title , Text number, Link
     .sample1 {
       .sample-text {
-        padding-top: 5rem;
+        padding-top: 2rem;
+        @media (max-width: 1030px) {
+          padding-top: 0;
+          text-align: center;
+        }
         h2 {
           color: rgba(212, 108, 171, 255);
         }
@@ -374,11 +388,13 @@ main {
       .sample-link {
         border: 1px solid rgba(212, 108, 171, 255);
         color: white;
-        // background-color: rgba(212, 108, 171, 255);
         transition: all 0.4s ease;
         &:hover {
           background-color: rgba(212, 108, 171, 255);
-          // background-color: transparent;
+        }
+        @media (max-width: 1030px) {
+          display: block;
+          margin: 0 auto;
         }
       }
       .flex-row {
@@ -428,12 +444,25 @@ main {
       }
     }
     .sample2 {
-      h2 {
-        color: rgba(140, 206, 222, 255);
+      .sample-text {
+        padding-top: 2rem;
+        @media (max-width: 1030px) {
+          padding-top: 0;
+          text-align: center;
+        }
+        h2 {
+          color: rgba(140, 206, 222, 255);
+          @media (max-width: 1030px) {
+            padding-top: 0;
+          }
+        }
       }
       .sample-image {
         padding-right: 3rem;
         padding-top: 5rem;
+        @media (max-width: 1024px) {
+          padding: 2rem 0;
+        }
       }
       .sample-number {
         color: rgba(140, 206, 222, 255);
@@ -447,9 +476,28 @@ main {
         &:hover {
           background-color: rgba(140, 206, 222, 255);
         }
+        @media (max-width: 1030px) {
+          display: block;
+          margin: 0 auto;
+        }
       }
     }
     .sample3 {
+      .sample-text {
+        padding-top: 2rem;
+        @media (max-width: 1030px) {
+          padding-top: 0;
+          text-align: center;
+          h2 {
+            padding-top: 0;
+          }
+        }
+      }
+      .sample-image {
+        @media (max-width: 1024px) {
+          padding: 2rem 0;
+        }
+      }
       .sample-link {
         border: 2px solid black;
         color: white;
@@ -457,17 +505,33 @@ main {
         &:hover {
           background-color: black;
         }
+        @media (max-width: 1030px) {
+          display: block;
+          margin: 0 auto;
+        }
       }
     }
     .sample4 {
-      h2 {
-        // color: rgba(252, 147, 126, 255);
-        // color: rgba(203, 184, 167, 255);
-        color: rgba(238, 145, 137, 255);
+      .sample-text {
+        padding-top: 2rem;
+        @media (max-width: 1030px) {
+          padding-top: 0;
+          text-align: center;
+        }
+        h2 {
+          color: rgba(238, 145, 137, 255);
+          @media (max-width: 1030px) {
+            padding-top: 0;
+          }
+        }
       }
+
       .sample-image {
         padding-right: 3rem;
         padding-top: 5rem;
+        @media (max-width: 1024px) {
+          padding: 2rem 0;
+        }
       }
       .sample-number {
         color: rgba(238, 145, 137, 255);
@@ -480,6 +544,10 @@ main {
         transition: all 0.4s ease;
         &:hover {
           background-color: rgba(238, 145, 137, 255);
+        }
+        @media (max-width: 1030px) {
+          display: block;
+          margin: 0 auto;
         }
       }
     }
