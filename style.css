@@ -712,24 +712,6 @@ main .production-page .page-description a {
   left: 0;
 }
 
-.cursor {
-  border-radius: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: all 0.4s ease;
-  transition-property: background, transform;
-  transform-origin: 130% 160%;
-}
-
-.cursor-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 0.5rem;
-}
-
 .nav-active {
   background: rgb(86, 124, 228);
   transform: scale(1.5);

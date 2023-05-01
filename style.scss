@@ -641,32 +641,6 @@ main {
   left: 0;
 }
 
-// Cursor
-.cursor {
-  // width: 3rem;
-  // height: 3rem;
-  // border: 2px solid white;
-  border-radius: 50%;
-  position: absolute;
-  // align the mouse and the cursor (circle) to be in center
-  transform: translate(-50%, -50%);
-  // to be able to click on elements
-  pointer-events: none;
-  // creater transition for the nav-active
-  transition: all 0.4s ease;
-  // specify only to transition the background and the transform
-  transition-property: background, transform;
-  // center the transformed scale circle (left/right, up/down)
-  transform-origin: 130% 160%;
-}
-// Center cursor text (Tap)
-.cursor-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 0.5rem;
-}
 // Create the class when hover on Logo and Bruger
 .nav-active {
   background: rgb(86, 124, 228);
