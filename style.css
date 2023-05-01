@@ -340,6 +340,9 @@ main .about-page .sample1 .sample-text.about-text,
 main .about-page .sample2 .sample-text.about-text,
 main .about-page .sample3 .sample-text.about-text,
 main .about-page .sample4 .sample-text.about-text {
+  flex-basis: 25rem;
+  flex: 1;
+  position: relative;
   align-self: flex-start;
 }
 main .sample-pack-page .sample1 .sample-text.about-text p,
@@ -476,6 +479,68 @@ main .about-page .sample1 .sample-link {
 main .sample-pack-page .sample1 .sample-link:hover,
 main .about-page .sample1 .sample-link:hover {
   background-color: rgb(212, 108, 171);
+}
+main .sample-pack-page .sample1 .flex-row,
+main .about-page .sample1 .flex-row {
+  align-items: flex-start;
+}
+@media (max-width: 1200px) {
+  main .sample-pack-page .sample1 .flex-row,
+  main .about-page .sample1 .flex-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+main .sample-pack-page .sample1 .flex-row .about-image-container,
+main .about-page .sample1 .flex-row .about-image-container {
+  padding-right: 2rem;
+  max-width: 35%;
+}
+@media (max-width: 1200px) {
+  main .sample-pack-page .sample1 .flex-row .about-image-container,
+  main .about-page .sample1 .flex-row .about-image-container {
+    max-width: 100%;
+  }
+}
+main .sample-pack-page .sample1 .flex-row .about-image-container img,
+main .about-page .sample1 .flex-row .about-image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+main .sample-pack-page .sample1 .flex-row .about-text,
+main .about-page .sample1 .flex-row .about-text {
+  width: 75%;
+}
+@media (max-width: 1200px) {
+  main .sample-pack-page .sample1 .flex-row .about-text,
+  main .about-page .sample1 .flex-row .about-text {
+    width: 100%;
+    padding: 2rem 0;
+  }
+}
+main .sample-pack-page .sample1 .flex-row .about-text p,
+main .about-page .sample1 .flex-row .about-text p {
+  font-size: 1.2rem;
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+  line-height: 30px;
+  margin-bottom: 0.5rem;
+}
+main .sample-pack-page .sample1 .flex-row .about-text a,
+main .about-page .sample1 .flex-row .about-text a {
+  color: rgb(255, 139, 93);
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.4s ease;
+}
+main .sample-pack-page .sample1 .flex-row .about-text a:hover,
+main .about-page .sample1 .flex-row .about-text a:hover {
+  opacity: 1;
+}
+main .sample-pack-page .sample1 .flex-row .about-text .move-padding-bottom,
+main .about-page .sample1 .flex-row .about-text .move-padding-bottom {
+  margin-bottom: 8rem;
 }
 main .sample-pack-page .sample2 h2,
 main .about-page .sample2 h2 {
