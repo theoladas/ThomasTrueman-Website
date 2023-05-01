@@ -408,6 +408,7 @@ main {
           max-width: 35%;
           @media (max-width: 1200px) {
             max-width: 100%;
+            padding-right: 0;
           }
           img {
             width: 100%;
@@ -668,11 +669,16 @@ main {
   // add the effect
   clip-path: circle(50px at 100% -10%);
   -webkit-clip-path: circle(50px at 100% -10%);
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
   .nav-links {
     font-size: 2rem;
     flex-basis: 30rem;
+
     li {
       list-style-type: none;
+
       a {
         text-decoration: none;
         color: black;
@@ -718,6 +724,9 @@ main {
   }
   .contact {
     flex-basis: 30rem;
+    @media (max-width: 1024px) {
+      flex-basis: 10rem;
+    }
     h2 {
       font-size: 3rem;
       padding: 2rem 0rem;
