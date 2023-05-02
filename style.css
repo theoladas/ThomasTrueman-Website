@@ -950,6 +950,11 @@ footer {
   width: 90%;
   margin: 0 auto;
 }
+@media (max-width: 1024px) {
+  footer {
+    margin-top: 10rem;
+  }
+}
 footer p {
   color: white;
   font-size: 0.75rem;

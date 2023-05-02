@@ -784,6 +784,9 @@ footer {
   padding-bottom: 1rem;
   width: 90%;
   margin: 0 auto;
+  @media (max-width: $breakpoint-medium) {
+    margin-top: 10rem;
+  }
   p {
     color: $white-color;
     font-size: 0.75rem;

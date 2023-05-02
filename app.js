@@ -13,7 +13,7 @@ function animateSlides() {
 
   // Loop over each slide
   sliders.forEach((slide, index, slides) => {
-    // Select some other elements
+    // Select other elements
     const revealImage = slide.querySelector(".reveal-image");
     const image = slide.querySelector("img");
     const revealtext = slide.querySelector(".reveal-text");
@@ -38,11 +38,6 @@ function animateSlides() {
     })
       // to copy the previous timeline animation we use .setTween()
       .setTween(slideTimeline1)
-      // .addIndicators({
-      //   colorStart: "white",
-      //   colorTrigger: "white",
-      //   name: "slide",
-      // })
       .addTo(controller);
 
     // New Animation (2nd Slide). I want to do a different animation with the 2nd slide. We can grab the 2nd slide from the forEach loop (index).
@@ -70,7 +65,7 @@ function animateSlides() {
 
       // By setting a Pin means that the slide will stuck on the screen and it will stay stuck until the animation scroll ends.
       // The Pin related to the duration we set above. 100% means that will take the full height of the element we selected.
-      // To fix the gap of the fade out black space , we add the pushFollowes: false, which will push the next element to show when the fade out finish.
+      // To fix the gap of the fade out black space , we add the pushFollowers: false, which will push the next element to show when the fade out finish.
       // The next content is coming on top of the previous one.
       .setPin(slide, { pushFollowers: false })
       .setTween(pageTimeline1)
@@ -137,7 +132,7 @@ function navToggle(e) {
     // Create animation for burger lines (y push it up by 5). We make background:black to see the burger lines in the white (contact page) bg.
     gsap.to(".line1", 0.5, { rotate: "45deg", y: 5, background: "black" });
     gsap.to(".line2", 0.5, { rotate: "-45deg", y: -5, background: "black" });
-    // make visible the logo on cotnact page (by changing bg-color)
+    // make visible the logo on contact page (by changing bg-color)
     gsap.to("#logo", 1, { color: "black" });
     // Expand that nav clipPath effect (show the contact page)
     gsap.to(".nav-bar", 1, { clipPath: "circle(2500px at 100% -10%)" });
