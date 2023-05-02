@@ -1,4 +1,4 @@
-<h1 align="center">Thomas Trueman's Personal Website</h1>
+<h1 align="center">Thomas Trueman's Website</h1>
 
 <div align="center">
 Welcome to the GitHub repository for Thomas Trueman's personal website, a project that showcases Thomas's portfolio, skills, and projects.
