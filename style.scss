@@ -671,6 +671,8 @@ main {
   // add the effect
   clip-path: circle(50px at 100% -10%);
   -webkit-clip-path: circle(50px at 100% -10%);
+  -moz-clip-path: circle(50px at 100% -10%);
+  -ms-clip-path: circle(50px at 100% -10%);
   @media (max-width: $breakpoint-medium) {
     flex-direction: column;
   }
