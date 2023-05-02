@@ -15,6 +15,7 @@ $light-opacity: 0.7;
 $dark-opacity: 0.2;
 $transition-time: 0.4s;
 
+$breakpoint-lg: 1200px;
 $breakpoint-medium: 1024px;
 $breakpoint-small: 830px;
 
@@ -26,7 +27,7 @@ $breakpoint-small: 830px;
 }
 body {
   height: 100vh;
-  background: #17181a;
+  background: $dark-grey-color;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   position: relative;
@@ -38,7 +39,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 830px) {
+  @media (max-width: $breakpoint-small) {
     flex-direction: column;
   }
 }
@@ -49,10 +50,10 @@ main {
   justify-content: center;
   flex: 1;
   flex-basis: 25rem;
-  @media (max-width: 1024px) {
+  @media (max-width: $breakpoint-medium) {
     align-items: flex-start;
   }
-  @media (max-width: 830px) {
+  @media (max-width: $breakpoint-small) {
     align-items: center;
     justify-content: initial;
   }
@@ -77,10 +78,10 @@ main {
 .page-description {
   margin: 0 auto;
   h1 {
-    font-family: "Bebas Neue", cursive;
+    font-family: $font-bebas;
     font-size: 5rem;
     text-align: center;
-    color: white;
+    color: $white-color;
     margin-top: -48px;
     padding-bottom: 4rem;
   }
@@ -89,15 +90,15 @@ main {
     margin: 0 auto;
     font-size: 1.2rem;
     line-height: 30px;
-    color: rgb(223, 223, 223);
+    color: $light-grey-color;
     padding-bottom: 1rem;
   }
   a {
     text-decoration: none;
     text-transform: none;
-    color: white;
-    opacity: 0.7;
-    transition: all 0.4s ease;
+    color: $white-color;
+    opacity: $light-opacity;
+    transition: all $transition-time ease;
     &:hover {
       opacity: 1;
     }
@@ -106,7 +107,7 @@ main {
 // Header
 .nav-header {
   min-height: 10vh;
-  color: white;
+  color: $white-color;
   margin: auto;
   width: 90%;
   padding: 2rem 0rem;
@@ -114,20 +115,20 @@ main {
   z-index: 2;
   // Logo
   #logo {
-    color: white;
-    font-family: "Abril Fatface", cursive;
-    opacity: 0.7;
+    color: $white-color;
+    font-family: $font-abril;
+    opacity: $light-opacity;
     cursor: pointer;
-    transition: opacity 0.4s ease;
+    transition: opacity $transition-time ease;
     &:hover {
       opacity: 1;
     }
   }
   // Burger
   .burger {
-    opacity: 0.7;
+    opacity: $light-opacity;
     cursor: pointer;
-    transition: opacity 0.4s ease;
+    transition: opacity $transition-time ease;
     &:hover {
       opacity: 1;
     }
@@ -136,11 +137,11 @@ main {
       width: 2rem;
       height: 0.2rem;
       margin: 0.4rem;
-      background: white;
+      background: $white-color;
       pointer-events: none;
     }
   }
-  @media (max-width: 830px) {
+  @media (max-width: $breakpoint-small) {
     flex-direction: row;
   }
 }
@@ -152,8 +153,8 @@ main {
     min-height: 90vh;
     margin: 0 auto;
     width: 90%;
-    color: white;
-    background: #17181a;
+    color: $white-color;
+    background: $dark-grey-color;
   }
   // Image
   .hero-img {
@@ -162,14 +163,14 @@ main {
     flex-basis: 25rem;
     // Add an overflow:hidden so the slideTimeline scale works
     overflow: hidden;
-    @media (max-width: 830px) {
+    @media (max-width: $breakpoint-small) {
       width: 100%;
     }
     img {
       width: 95%;
       height: 100%;
       object-fit: cover;
-      @media (max-width: 830px) {
+      @media (max-width: $breakpoint-small) {
         width: 100%;
       }
     }
@@ -178,10 +179,10 @@ main {
   .hero-description {
     padding-left: 5rem;
     position: relative;
-    @media (max-width: 1024px) {
+    @media (max-width: $breakpoint-medium) {
       padding-left: 1rem;
     }
-    @media (max-width: 830px) {
+    @media (max-width: $breakpoint-small) {
       text-align: center;
       padding-left: 0;
     }
@@ -190,27 +191,27 @@ main {
       position: relative;
       overflow: hidden;
       h2 {
-        font-family: "Bebas Neue", cursive;
+        font-family: $font-bebas;
         font-size: 5rem;
         line-height: 1;
-        @media (max-width: 1024px) {
+        @media (max-width: $breakpoint-medium) {
           font-size: 4.75rem;
           line-height: 1;
         }
-        @media (max-width: 830px) {
+        @media (max-width: $breakpoint-small) {
           padding-top: 1rem;
         }
         .about-span {
-          color: rgb(255, 139, 93);
+          color: $about-color;
         }
         .dokkodo-span {
-          color: rgb(165, 214, 167);
+          color: $dokkodo-color;
         }
         .production-span {
-          color: rgb(167, 110, 231);
+          color: $production-color;
         }
         .sample-span {
-          color: rgb(86, 124, 228);
+          color: $sample-color;
         }
       }
       // Create the class for the hidden div tittle-color (we want to swipe it up)
@@ -230,8 +231,8 @@ main {
       padding: 3rem 0rem;
       font-size: 1.5rem;
       line-height: 35px;
-      color: rgb(223, 223, 223);
-      @media (max-width: 1024px) {
+      color: $light-grey-color;
+      @media (max-width: $breakpoint-medium) {
         padding: 1rem 0rem;
         margin-bottom: 1rem;
       }
@@ -241,11 +242,11 @@ main {
       background: none;
       border: none;
       font-size: 1rem;
-      border: 1px solid white;
+      border: 1px solid $white-color;
       text-decoration: none;
       align-self: flex-start;
       cursor: pointer;
-      @media (max-width: 830px) {
+      @media (max-width: $breakpoint-small) {
         margin: 0 auto;
         width: 100%;
       }
@@ -253,8 +254,8 @@ main {
     a {
       opacity: 0.5;
       text-decoration: none;
-      color: white;
-      transition: opacity 0.4s ease;
+      color: $white-color;
+      transition: opacity $transition-time ease;
       &:hover {
         opacity: 1;
       }
@@ -266,9 +267,9 @@ main {
   .about-page {
     // Colored banner
     .container-full {
-      background-color: rgb(86, 124, 228);
+      background-color: $sample-color;
       &.about-container {
-        background-color: rgb(255, 139, 93);
+        background-color: $about-color;
       }
     }
 
@@ -285,7 +286,7 @@ main {
       position: relative;
       width: 70%;
       margin: auto;
-      color: white;
+      color: $white-color;
       &.about1 {
         min-height: 50vh;
       }
@@ -296,7 +297,7 @@ main {
         h2 {
           font-size: 3.5rem;
           padding: 2rem 0rem;
-          @media (max-width: 1024px) {
+          @media (max-width: $breakpoint-medium) {
             padding-bottom: 1rem;
           }
         }
@@ -304,7 +305,7 @@ main {
           font-size: 1.5rem;
           line-height: 35px;
           padding: 1rem 2rem 0rem 0rem;
-          @media (max-width: 1024px) {
+          @media (max-width: $breakpoint-medium) {
             padding: 0;
           }
           margin-bottom: 3rem;
@@ -322,10 +323,10 @@ main {
             margin-bottom: 0.5rem;
           }
           a {
-            color: rgb(255, 139, 93);
+            color: $about-color;
             text-decoration: none;
-            opacity: 0.7;
-            transition: opacity 0.4s ease;
+            opacity: $light-opacity;
+            transition: opacity $transition-time ease;
             &:hover {
               opacity: 1;
             }
@@ -336,7 +337,7 @@ main {
         }
       }
       .sample-image {
-        @media (max-width: 1024px) {
+        @media (max-width: $breakpoint-medium) {
           order: -1;
         }
         img {
@@ -356,14 +357,14 @@ main {
         position: absolute;
         bottom: -0%;
         right: -5%;
-        opacity: 0.2;
+        opacity: $dark-opacity;
       }
       .sample-link {
         font-size: 1.2rem;
         text-decoration: none;
         text-align: center;
-        color: white;
-        border: 1px solid white;
+        color: $white-color;
+        border: 1px solid $white-color;
         background: none;
         padding: 1rem 2rem;
         margin-bottom: 2rem;
@@ -390,8 +391,8 @@ main {
       }
       .sample-link {
         border: 1px solid rgba(212, 108, 171, 255);
-        color: white;
-        transition: all 0.4s ease;
+        color: $white-color;
+        transition: all $transition-time ease;
         &:hover {
           background-color: rgba(212, 108, 171, 255);
         }
@@ -402,14 +403,14 @@ main {
       }
       .flex-row {
         align-items: flex-start;
-        @media (max-width: 1200px) {
+        @media (max-width: $breakpoint-lg) {
           flex-direction: column;
           align-items: center;
         }
         .about-image-container {
           padding-right: 2rem;
           max-width: 35%;
-          @media (max-width: 1200px) {
+          @media (max-width: $breakpoint-lg) {
             max-width: 100%;
             padding-right: 0;
           }
@@ -421,7 +422,7 @@ main {
         }
         .about-text {
           width: 75%;
-          @media (max-width: 1200px) {
+          @media (max-width: $breakpoint-lg) {
             width: 100%;
             padding: 2rem 0;
           }
@@ -433,10 +434,10 @@ main {
             margin-bottom: 0.5rem;
           }
           a {
-            color: rgb(255, 139, 93);
+            color: $about-color;
             text-decoration: none;
-            opacity: 0.7;
-            transition: opacity 0.4s ease;
+            opacity: $light-opacity;
+            transition: opacity $transition-time ease;
             &:hover {
               opacity: 1;
             }
@@ -464,7 +465,7 @@ main {
       .sample-image {
         padding-right: 3rem;
         padding-top: 5rem;
-        @media (max-width: 1024px) {
+        @media (max-width: $breakpoint-medium) {
           padding: 2rem 0;
         }
       }
@@ -475,8 +476,8 @@ main {
       }
       .sample-link {
         border: 1px solid rgba(140, 206, 222, 255);
-        color: white;
-        transition: all 0.4s ease;
+        color: $white-color;
+        transition: all $transition-time ease;
         &:hover {
           background-color: rgba(140, 206, 222, 255);
         }
@@ -498,16 +499,16 @@ main {
         }
       }
       .sample-image {
-        @media (max-width: 1024px) {
+        @media (max-width: $breakpoint-medium) {
           padding: 2rem 0;
         }
       }
       .sample-link {
-        border: 2px solid black;
-        color: white;
-        transition: all 0.4s ease;
+        border: 2px solid $black-color;
+        color: $white-color;
+        transition: all $transition-time ease;
         &:hover {
-          background-color: black;
+          background-color: $black-color;
         }
         @media (max-width: 1030px) {
           display: block;
@@ -533,7 +534,7 @@ main {
       .sample-image {
         padding-right: 3rem;
         padding-top: 5rem;
-        @media (max-width: 1024px) {
+        @media (max-width: $breakpoint-medium) {
           padding: 2rem 0;
         }
       }
@@ -544,8 +545,8 @@ main {
       }
       .sample-link {
         border: 1px solid rgba(238, 145, 137, 255);
-        color: white;
-        transition: all 0.4s ease;
+        color: $white-color;
+        transition: all $transition-time ease;
         &:hover {
           background-color: rgba(238, 145, 137, 255);
         }
@@ -561,11 +562,11 @@ main {
 // DOKKODO PAGE
 .dokkodo-page {
   .dokkodo-container {
-    background-color: rgb(165, 214, 167);
+    background-color: $dokkodo-color;
   }
   .page-description {
     .color-p {
-      color: rgb(165, 214, 167);
+      color: $dokkodo-color;
     }
   }
   .container {
@@ -580,7 +581,7 @@ main {
   .production-page {
     min-height: 80vh;
     .production-container {
-      background-color: rgb(167, 110, 231);
+      background-color: $production-color;
     }
     .page-description {
       .flex-row {
@@ -593,7 +594,7 @@ main {
         background-size: contain;
         .image-container {
           max-width: 45%;
-          @media (max-width: 1024px) {
+          @media (max-width: $breakpoint-medium) {
             max-width: 100%;
           }
           img {
@@ -606,7 +607,7 @@ main {
           padding-left: 2rem;
           padding-top: 2rem;
           width: 55%;
-          @media (max-width: 1024px) {
+          @media (max-width: $breakpoint-medium) {
             width: 100%;
             padding: 2rem 0;
           }
@@ -620,21 +621,21 @@ main {
             a {
               padding: 1rem 2rem;
               font-size: 1rem;
-              border: 1px solid rgb(167, 110, 231);
+              border: 1px solid $production-color;
               text-decoration: none;
-              color: white;
-              opacity: 0.7;
+              color: $white-color;
+              opacity: $light-opacity;
               transition: all 0.5s ease;
               &:hover {
                 opacity: 1;
-                background-color: rgb(167, 110, 231);
+                background-color: $production-color;
               }
             }
           }
         }
       }
       a {
-        color: rgb(167, 110, 231);
+        color: $production-color;
       }
     }
   }
@@ -642,16 +643,16 @@ main {
 
 // Match the color title text of each section
 .title-color-1 {
-  background: rgb(255, 139, 93);
+  background: $about-color;
 }
 .title-color-2 {
-  background: rgb(165, 214, 167);
+  background: $dokkodo-color;
 }
 .title-color-3 {
-  background: rgb(167, 110, 231);
+  background: $production-color;
 }
 .title-color-4 {
-  background: rgb(86, 124, 228);
+  background: $sample-color;
 }
 // Navigation
 .nav-bar {
@@ -670,7 +671,7 @@ main {
   // add the effect
   clip-path: circle(50px at 100% -10%);
   -webkit-clip-path: circle(50px at 100% -10%);
-  @media (max-width: 1024px) {
+  @media (max-width: $breakpoint-medium) {
     flex-direction: column;
   }
   .nav-links {
@@ -680,10 +681,10 @@ main {
       list-style-type: none;
       a {
         text-decoration: none;
-        color: black;
+        color: $black-color;
       }
       .instagram-link {
-        transition: all 0.4s ease;
+        transition: all $transition-time ease;
         &:hover {
           background: -webkit-linear-gradient(
             #405de6,
@@ -723,7 +724,7 @@ main {
   }
   .contact {
     flex-basis: 30rem;
-    @media (max-width: 1024px) {
+    @media (max-width: $breakpoint-medium) {
       flex-basis: 10rem;
     }
     h2 {
@@ -734,10 +735,10 @@ main {
       font-size: 1.5rem;
       line-height: 2rem;
       a {
-        color: black;
+        color: $black-color;
         text-decoration: none;
-        opacity: 0.7;
-        transition: opacity 0.4s ease;
+        opacity: $light-opacity;
+        transition: opacity $transition-time ease;
         cursor: pointer;
         &:hover {
           opacity: 1;
@@ -753,19 +754,19 @@ main {
   position: absolute;
   width: 100%;
   height: 150%;
-  background: #17181a;
+  background: $dark-grey-color;
   top: -15%;
   left: 0;
 }
 
 // Create the class when hover on Logo and Bruger
 .nav-active {
-  background: rgb(86, 124, 228);
+  background: $sample-color;
   transform: scale(1.5);
 }
 // Create the class when hover on Explore Button
 .explore-active {
-  background: white;
+  background: $white-color;
   transform: scale(1.5);
 }
 
@@ -777,16 +778,16 @@ footer {
   width: 90%;
   margin: 0 auto;
   p {
-    color: white;
+    color: $white-color;
     font-size: 0.75rem;
     text-align: center;
     padding-top: 0.8rem;
     a {
       text-decoration: none;
       text-transform: none;
-      color: white;
+      color: $white-color;
       opacity: 0.6;
-      transition: all 0.4s ease;
+      transition: all $transition-time ease;
       &:hover {
         opacity: 1;
       }
@@ -799,11 +800,11 @@ footer {
         .fab,
         .fa-spotify {
           font-size: 1.5rem;
-          color: white;
+          color: $white-color;
         }
         padding: 0 0.7rem;
         opacity: 0.6;
-        transition: opacity 0.4s ease;
+        transition: opacity $transition-time ease;
         &:hover {
           opacity: 1;
         }
@@ -818,15 +819,15 @@ footer {
   width: 5%;
   height: 1%;
   margin-left: auto;
-  opacity: 0.2;
-  transition: opacity 0.4s ease;
+  opacity: $dark-opacity;
+  transition: opacity $transition-time ease;
   &:hover {
     opacity: 1;
   }
   .fa-solid {
     font-size: 2rem;
-    color: rgb(223, 223, 223);
-    transition: all 0.4s ease;
+    color: $light-grey-color;
+    transition: all $transition-time ease;
     animation: top 1s ease-in-out infinite;
     cursor: pointer;
     &:hover {
