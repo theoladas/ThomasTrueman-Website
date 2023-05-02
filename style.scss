@@ -8,7 +8,6 @@ body {
   height: 100vh;
   background: #17181a;
   font-family: "Montserrat", sans-serif;
-  // to hide the scroll horizontal bar
   overflow-x: hidden;
   position: relative;
 }
@@ -67,7 +66,6 @@ main {
   p {
     width: 90%;
     margin: 0 auto;
-    // text-align: center;
     font-size: 1.2rem;
     line-height: 30px;
     color: rgb(223, 223, 223);
@@ -88,11 +86,9 @@ main {
 .nav-header {
   min-height: 10vh;
   color: white;
-  // add space between the elements
   margin: auto;
   width: 90%;
   padding: 2rem 0rem;
-  // // put the content of nav-header infront (when hover)
   position: relative;
   z-index: 2;
   // Logo
@@ -187,7 +183,6 @@ main {
           color: rgb(255, 139, 93);
         }
         .dokkodo-span {
-          // color: rgb(86, 124, 228);
           color: rgb(165, 214, 167);
         }
         .production-span {
@@ -196,18 +191,8 @@ main {
         .sample-span {
           color: rgb(86, 124, 228);
         }
-        // .about-title {
-        //   margin-left: -24rem;
-        // }
-        // .dokkodo-title {
-        //   margin-left: -22rem;
-        // }
-        // .production-title {
-        //   margin-left: -19.5rem;
-        // }
       }
-      // Create the class for the hidden div tittle-color
-      //(we want to swipe it up)
+      // Create the class for the hidden div tittle-color (we want to swipe it up)
       .title-color {
         position: absolute;
         top: 0;
@@ -216,7 +201,7 @@ main {
         height: 100%;
         // make color darken
         mix-blend-mode: darken;
-        // move the colored div down (belowe the .title)
+        // move the colored div down (below the .title)
         transform: translateY(100%);
       }
     }
@@ -227,8 +212,6 @@ main {
       color: rgb(223, 223, 223);
       @media (max-width: 1024px) {
         padding: 1rem 0rem;
-      }
-      @media (max-width: 1024px) {
         margin-bottom: 1rem;
       }
     }
@@ -289,7 +272,6 @@ main {
         flex-basis: 25rem;
         flex: 1;
         position: relative;
-
         h2 {
           font-size: 3.5rem;
           padding: 2rem 0rem;
@@ -614,8 +596,6 @@ main {
             display: block;
             width: 10%;
             padding-top: 2rem;
-            // padding-top: 2rem;
-            // padding-left: 3rem;
             a {
               padding: 1rem 2rem;
               font-size: 1rem;
@@ -675,10 +655,8 @@ main {
   .nav-links {
     font-size: 2rem;
     flex-basis: 30rem;
-
     li {
       list-style-type: none;
-
       a {
         text-decoration: none;
         color: black;

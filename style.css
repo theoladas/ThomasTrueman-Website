@@ -228,10 +228,6 @@ main .hero-description p {
 @media (max-width: 1024px) {
   main .hero-description p {
     padding: 1rem 0rem;
-  }
-}
-@media (max-width: 1024px) {
-  main .hero-description p {
     margin-bottom: 1rem;
   }
 }
