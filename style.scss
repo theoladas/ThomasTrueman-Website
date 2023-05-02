@@ -1,3 +1,23 @@
+// Variables
+$font-bebas: "Bebas Neue", cursive;
+$font-abril: "Abril Fatface", cursive;
+
+$white-color: white;
+$black-color: black;
+$light-grey-color: rgb(223, 223, 223);
+$dark-grey-color: #17181a;
+$about-color: rgb(255, 139, 93);
+$dokkodo-color: rgb(165, 214, 167);
+$production-color: rgb(167, 110, 231);
+$sample-color: rgb(86, 124, 228);
+
+$light-opacity: 0.7;
+$dark-opacity: 0.2;
+$transition-time: 0.4s;
+
+$breakpoint-medium: 1024px;
+$breakpoint-small: 830px;
+
 // Base styles
 * {
   margin: 0;
@@ -47,6 +67,7 @@ main {
   width: 80%;
   margin: 0 auto;
 }
+
 // Color Page's Banner
 .container-full {
   width: 100%;
