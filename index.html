@@ -24,7 +24,7 @@
   <!-- add data-barba="wrapper" so barba page transition work. You add this for the content you don't want to change-->
   <body data-barba="wrapper">
     <!-- Header -->
-    <header class="nav-header flex-row">
+    <header class="nav-header flex-row" role="banner">
       <!-- Logo -->
       <h1>
         <a href="../index.html" id="logo" aria-label="Home"
@@ -32,19 +32,19 @@
         ></a>
       </h1>
       <!-- Burger -->
-      <div class="burger">
+      <div class="burger" aria-label="Menu">
         <div class="line1"></div>
         <div class="line2"></div>
       </div>
     </header>
 
     <!-- Main -->
-    <main data-barba="container" data-barba-namespace="home">
+    <main data-barba="container" data-barba-namespace="home" role="main">
       <!-- Slide ABOUT ME 1 -->
       <section class="about slide flex-row">
         <!-- Image-->
         <div class="hero-img">
-          <img src="/images/about.jpg" alt="" />
+          <img src="/images/about.jpg" alt="Thomas Trueman" />
           <div class="reveal-image"></div>
         </div>
         <!-- Hero Description -->
@@ -72,7 +72,7 @@
       <section class="dokkodo-sounds slide flex-row">
         <!-- Image-->
         <div class="hero-img">
-          <img src="/images/dokkodo.jpg" alt="" />
+          <img src="/images/dokkodo.jpg" alt="Dokkodo Sounds in the Studio" />
           <!-- A div hanging on top of the image -->
           <div class="reveal-image"></div>
         </div>
@@ -102,7 +102,10 @@
       <section class="production slide flex-row">
         <!-- Image -->
         <div class="hero-img">
-          <img src="/images/production.jpg" alt="" />
+          <img
+            src="/images/production.jpg"
+            alt="Thomas Trueman in the studio"
+          />
           <div class="reveal-image"></div>
         </div>
         <!-- Description -->
@@ -132,7 +135,7 @@
       <section class="sample slide flex-row">
         <!-- Image -->
         <div class="hero-img">
-          <img src="/images/sample.jpg" alt="" />
+          <img src="/images/sample.jpg" alt="Thomas Trueman in the studio" />
           <div class="reveal-image"></div>
         </div>
         <!-- Description -->
@@ -163,6 +166,7 @@
 
       <!-- Footer -->
       <footer>
+        <!-- Social Links and Copyright -->
         <ul class="social-links flex-center">
           <li>
             <a href="https://www.instagram.com/dokkodo.sounds/" target="_blank"
@@ -198,6 +202,7 @@
 
     <!-- Navigation -->
     <nav class="nav-bar" aria-label="Main navigation">
+      <!-- Navigation Links -->
       <ul class="nav-links">
         <li>
           <a

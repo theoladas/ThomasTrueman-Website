@@ -32,14 +32,14 @@
         ></a>
       </h1>
       <!-- Burger -->
-      <div class="burger">
+      <div class="burger" aria-label="Menu">
         <div class="line1"></div>
         <div class="line2"></div>
       </div>
     </header>
 
     <!-- Main -->
-    <main data-barba="container" data-barba-namespace="production">
+    <main data-barba="container" data-barba-namespace="production" role="main">
       <div class="production-page">
         <!-- Head Banner -->
         <div class="container-full production-container"></div>
@@ -47,7 +47,10 @@
           <h1>Production Music</h1>
           <div class="flex-row">
             <div class="image-container">
-              <img src="/production/images/thomas-production.jpg" alt="" />
+              <img
+                src="/production/images/thomas-production.jpg"
+                alt="Thomas Trueman profile photo"
+              />
             </div>
             <div class="info">
               <p>
@@ -113,6 +116,7 @@
 
       <!-- Footer -->
       <footer>
+        <!-- Social Links and Copyright -->
         <ul class="social-links flex-center">
           <li>
             <a href="https://www.instagram.com/dokkodo.sounds/" target="_blank"
@@ -139,7 +143,6 @@
             ></a>
           </li>
         </ul>
-
         <p>
           &copy 2023, by
           <a href="https://github.com/theoladas" target="_blank">Theo Ladas</a>
@@ -149,6 +152,7 @@
 
     <!-- Navigation -->
     <nav class="nav-bar" aria-label="Main navigation">
+      <!-- Navigation Links -->
       <ul class="nav-links">
         <li>
           <a

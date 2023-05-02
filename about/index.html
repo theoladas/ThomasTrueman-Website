@@ -32,14 +32,14 @@
         ></a>
       </h1>
       <!-- Burger -->
-      <div class="burger">
+      <div class="burger" aria-label="Menu">
         <div class="line1"></div>
         <div class="line2"></div>
       </div>
     </header>
 
     <!-- Main -->
-    <main data-barba="container" data-barba-namespace="about">
+    <main data-barba="container" data-barba-namespace="about" role="main">
       <div class="about-page">
         <!-- Head Banner -->
         <div class="container-full about-container"></div>
@@ -49,13 +49,13 @@
 
         <section class="sample1">
           <div class="flex-row">
-            <div class="about-image-container">
+            <figure class="about-image-container">
               <img
                 src="../about/images/thomas.jpg"
                 alt="Thomas Trueman photo"
               />
-            </div>
-            <div class="about-text">
+            </figure>
+            <article class="about-text">
               <p>
                 Dokkodo Sounds is his main artistic project, which focuses
                 around Lo-Fi, Ambient and Downtempo. He has releases with labels
@@ -174,15 +174,17 @@
                 It should also be noted, Thomas is not a fan of writing
                 biographies in the third person.
               </p>
-            </div>
+            </article>
           </div>
         </section>
         <!-- Arrow to the top -->
         <div class="arrow">
           <i class="fa-solid fa-arrow-up"></i>
         </div>
+
         <!-- Footer -->
         <footer>
+          <!-- Social Links and Copyright -->
           <ul class="social-links flex-center">
             <li>
               <a
@@ -211,7 +213,6 @@
               ></a>
             </li>
           </ul>
-
           <p>
             &copy 2023, by
             <a href="https://github.com/theoladas" target="_blank"
@@ -223,6 +224,7 @@
 
       <!-- Navigation -->
       <nav class="nav-bar" aria-label="Main navigation">
+        <!-- Navigation Links -->
         <ul class="nav-links">
           <li>
             <a
