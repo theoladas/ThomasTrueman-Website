@@ -766,6 +766,11 @@ main {
   background: $dark-grey-color;
   top: -15%;
   left: 0;
+  @media (max-width: $breakpoint-small) {
+    width: initial;
+    top: 0;
+    position: initial;
+  }
 }
 
 // Create the class when hover on Logo and Bruger

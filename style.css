@@ -934,6 +934,14 @@ main .production-page .page-description a {
   top: -15%;
   left: 0;
 }
+@media (max-width: 830px) {
+  .reveal-image,
+  .reveal-text {
+    width: initial;
+    top: 0;
+    position: initial;
+  }
+}
 
 .nav-active {
   background: rgb(86, 124, 228);
