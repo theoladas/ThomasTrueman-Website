@@ -56,6 +56,7 @@ main {
   @media (max-width: $breakpoint-small) {
     align-items: center;
     justify-content: initial;
+    flex-basis: 10rem;
   }
 }
 .flex-center {
@@ -164,7 +165,8 @@ main {
     // Add an overflow:hidden so the slideTimeline scale works
     overflow: hidden;
     @media (max-width: $breakpoint-small) {
-      width: 100%;
+      width: 90%;
+      flex-basis: 10rem;
     }
     img {
       width: 95%;
@@ -185,11 +187,16 @@ main {
     @media (max-width: $breakpoint-small) {
       text-align: center;
       padding-left: 0;
+      flex-basis: 20rem;
+      flex: 1;
     }
     .title {
       // to add the bg-color (title-color div) only to the title
       position: relative;
       overflow: hidden;
+      @media (max-width: $breakpoint-small) {
+        // flex-basis: 30rem;
+      }
       h2 {
         font-family: $font-bebas;
         font-size: 5rem;
@@ -235,6 +242,12 @@ main {
       @media (max-width: $breakpoint-medium) {
         padding: 1rem 0rem;
         margin-bottom: 1rem;
+      }
+      @media (max-width: $breakpoint-small) {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
     }
     .explore {
@@ -299,6 +312,9 @@ main {
           padding: 2rem 0rem;
           @media (max-width: $breakpoint-medium) {
             padding-bottom: 1rem;
+          }
+          @media (max-width: $breakpoint-small) {
+            font-size: 3rem;
           }
         }
         p {
@@ -584,6 +600,11 @@ main {
       background-color: $production-color;
     }
     .page-description {
+      h1 {
+        @media (max-width: $breakpoint-small) {
+          font-size: 4rem;
+        }
+      }
       .flex-row {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -788,12 +809,12 @@ main {
 footer {
   min-height: 5vh;
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   width: 90%;
   margin: 0 auto;
-  @media (max-width: $breakpoint-medium) {
-    margin-top: 10rem;
-  }
+  // @media (max-width: $breakpoint-medium) {
+  //   margin-top: 10rem;
+  // }
   p {
     color: $white-color;
     font-size: 0.75rem;
@@ -850,6 +871,11 @@ footer {
     &:hover {
       transform: scale(1.5);
     }
+  }
+  @media (max-width: $breakpoint-small) {
+    position: fixed;
+    bottom: 10%;
+    right: 10px;
   }
 }
 // Animation Arrow to the Top

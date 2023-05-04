@@ -44,6 +44,7 @@ main {
   .flex-column {
     align-items: center;
     justify-content: initial;
+    flex-basis: 10rem;
   }
 }
 
@@ -150,7 +151,8 @@ main .hero-img {
 }
 @media (max-width: 830px) {
   main .hero-img {
-    width: 100%;
+    width: 90%;
+    flex-basis: 10rem;
   }
 }
 main .hero-img img {
@@ -176,6 +178,8 @@ main .hero-description {
   main .hero-description {
     text-align: center;
     padding-left: 0;
+    flex-basis: 20rem;
+    flex: 1;
   }
 }
 main .hero-description .title {
@@ -229,6 +233,14 @@ main .hero-description p {
   main .hero-description p {
     padding: 1rem 0rem;
     margin-bottom: 1rem;
+  }
+}
+@media (max-width: 830px) {
+  main .hero-description p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 main .hero-description .explore {
@@ -325,6 +337,18 @@ main .about-page .sample4 .sample-text h2 {
   main .about-page .sample3 .sample-text h2,
   main .about-page .sample4 .sample-text h2 {
     padding-bottom: 1rem;
+  }
+}
+@media (max-width: 830px) {
+  main .sample-pack-page .sample1 .sample-text h2,
+  main .sample-pack-page .sample2 .sample-text h2,
+  main .sample-pack-page .sample3 .sample-text h2,
+  main .sample-pack-page .sample4 .sample-text h2,
+  main .about-page .sample1 .sample-text h2,
+  main .about-page .sample2 .sample-text h2,
+  main .about-page .sample3 .sample-text h2,
+  main .about-page .sample4 .sample-text h2 {
+    font-size: 3rem;
   }
 }
 main .sample-pack-page .sample1 .sample-text p,
@@ -755,6 +779,11 @@ main .production-page {
 main .production-page .production-container {
   background-color: rgb(167, 110, 231);
 }
+@media (max-width: 830px) {
+  main .production-page .page-description h1 {
+    font-size: 4rem;
+  }
+}
 main .production-page .page-description .flex-row {
   flex-wrap: wrap;
   justify-content: space-around;
@@ -956,14 +985,9 @@ main .production-page .page-description a {
 footer {
   min-height: 5vh;
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   width: 90%;
   margin: 0 auto;
-}
-@media (max-width: 1024px) {
-  footer {
-    margin-top: 10rem;
-  }
 }
 footer p {
   color: white;
@@ -1018,6 +1042,13 @@ footer .social-links li a:hover {
 }
 .arrow .fa-solid:hover {
   transform: scale(1.5);
+}
+@media (max-width: 830px) {
+  .arrow {
+    position: fixed;
+    bottom: 10%;
+    right: 10px;
+  }
 }
 
 @keyframes top {
