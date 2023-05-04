@@ -18,7 +18,6 @@ $transition-time: 0.4s;
 $breakpoint-lg: 1200px;
 $breakpoint-medium: 1024px;
 $breakpoint-small: 830px;
-$breakpoint-mobile: 375px;
 
 // Base styles
 * {
@@ -57,10 +56,6 @@ main {
   @media (max-width: $breakpoint-small) {
     align-items: center;
     justify-content: initial;
-  }
-  @media (max-width: $breakpoint-mobile) {
-    flex-basis: 35rem;
-    flex: inherit;
   }
 }
 .flex-center {
@@ -171,9 +166,6 @@ main {
     @media (max-width: $breakpoint-small) {
       width: 100%;
     }
-    @media (max-width: $breakpoint-mobile) {
-      flex-basis: 15rem;
-    }
     img {
       width: 95%;
       height: 100%;
@@ -198,9 +190,6 @@ main {
       // to add the bg-color (title-color div) only to the title
       position: relative;
       overflow: hidden;
-      @media (max-width: $breakpoint-mobile) {
-        overflow: inherit;
-      }
       h2 {
         font-family: $font-bebas;
         font-size: 5rem;
@@ -236,9 +225,6 @@ main {
         mix-blend-mode: darken;
         // move the colored div down (below the .title)
         transform: translateY(100%);
-        @media (max-width: $breakpoint-mobile) {
-          height: inherit;
-        }
       }
     }
     p {
@@ -249,14 +235,6 @@ main {
       @media (max-width: $breakpoint-medium) {
         padding: 1rem 0rem;
         margin-bottom: 1rem;
-      }
-      @media (max-width: $breakpoint-mobile) {
-        font-size: 1.45rem;
-        line-height: 30px;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
       }
     }
     .explore {

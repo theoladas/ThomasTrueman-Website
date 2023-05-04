@@ -46,12 +46,6 @@ main {
     justify-content: initial;
   }
 }
-@media (max-width: 375px) {
-  .flex-column {
-    flex-basis: 35rem;
-    flex: inherit;
-  }
-}
 
 .flex-center {
   display: flex;
@@ -159,11 +153,6 @@ main .hero-img {
     width: 100%;
   }
 }
-@media (max-width: 375px) {
-  main .hero-img {
-    flex-basis: 15rem;
-  }
-}
 main .hero-img img {
   width: 95%;
   height: 100%;
@@ -192,11 +181,6 @@ main .hero-description {
 main .hero-description .title {
   position: relative;
   overflow: hidden;
-}
-@media (max-width: 375px) {
-  main .hero-description .title {
-    overflow: inherit;
-  }
 }
 main .hero-description .title h2 {
   font-family: "Bebas Neue", cursive;
@@ -235,11 +219,6 @@ main .hero-description .title .title-color {
   mix-blend-mode: darken;
   transform: translateY(100%);
 }
-@media (max-width: 375px) {
-  main .hero-description .title .title-color {
-    height: inherit;
-  }
-}
 main .hero-description p {
   padding: 3rem 0rem;
   font-size: 1.5rem;
@@ -250,16 +229,6 @@ main .hero-description p {
   main .hero-description p {
     padding: 1rem 0rem;
     margin-bottom: 1rem;
-  }
-}
-@media (max-width: 375px) {
-  main .hero-description p {
-    font-size: 1.45rem;
-    line-height: 30px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
   }
 }
 main .hero-description .explore {
