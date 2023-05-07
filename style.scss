@@ -608,7 +608,7 @@ main {
       .flex-row {
         flex-wrap: wrap;
         justify-content: space-around;
-        background-image: url("/production/images/production-bg-pink.png");
+        background-image: url("./production/images/production-bg-pink.png");
         background-position: right bottom;
         padding-bottom: 8rem;
         background-repeat: no-repeat;
@@ -812,9 +812,6 @@ footer {
   padding-bottom: 2rem;
   width: 90%;
   margin: 0 auto;
-  // @media (max-width: $breakpoint-medium) {
-  //   margin-top: 10rem;
-  // }
   p {
     color: $white-color;
     font-size: 0.75rem;
